@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: FeaturePackage/Create_contact.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>19 Sep 2021, 19:01</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">FeaturePackage/Create_contact.feature</td>
+                    <td      class="passed"    >15</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">17</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="956788700">956ms</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">FeaturePackage/Create_contact.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Create a contact in addressbook</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">057ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:01:02.737 Environment variable is null 
+19:01:02.739 karate.env = null 
+19:01:02.739 config.baseUrl = https://designer.api.spec.lovethat.design 
+19:01:02.740 config.token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = 'Bearer '+token</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">headers {Content-Type : 'application/json', Accept : 'application/json'}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def pathUrl = '/api/designer/v1.0/contacts'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonPayload = read('C://Users//karti//eclipse//Karate//RequestPayload//Create_contact_with_existing_company.json')</span>
+  
+  <span class="lead-duration duration">029ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def jsonResponse = read('C://Users//karti//eclipse//Karate//ResponsePayload//Create_contact_with_existing_company.json')</span>
+  
+  <span class="lead-duration duration">017ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def RandomCharacters = Java.type('FeaturePackage.RandomCharacter')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def name = RandomCharacters.random_Characters()</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_tag1.html">@tag1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">899ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a contact in addressbook with all valid details</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = name</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.email = name +'@gmail.com'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonResponse.data.name = name</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonResponse.data.email = name +'@gmail.com'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">892ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:01:02.808 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 500
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;project_code&quot;:null,&quot;opportunity_code&quot;:null,&quot;batch_id&quot;:&quot;2718fa571969d14f021b0831ab08d4e44850&quot;,&quot;company_code&quot;:&quot;28lightbulbs&quot;,&quot;profile_image_id&quot;:&quot;&quot;,&quot;name&quot;:&quot;617po&quot;,&quot;designation&quot;:&quot;developer&quot;,&quot;mobile_no1&quot;:&quot;000088888&quot;,&quot;mobile_no2&quot;:null,&quot;tel_no1&quot;:&quot;8796778888&quot;,&quot;email&quot;:&quot;617po@gmail.com&quot;,&quot;linked_in_url&quot;:&quot;https://test-designer.lovethat.design/address-book/contacts&quot;,&quot;facebook_url&quot;:null,&quot;blog_url&quot;:null,&quot;company_name&quot;:null,&quot;lead_source&quot;:&quot;facebook&quot;,&quot;tags&quot;:[&quot;contact tags&quot;],&quot;showMobile&quot;:false,&quot;showPhone&quot;:false}
+
+19:01:03.698 response time in milliseconds: 888.77
+1 &lt; 401
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:03 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+{
+    &quot;message&quot;: &quot;&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+          <a>com.intuit.karate.exception.KarateException: Create_contact.feature:25 - status code was: 401, expected: 200, response time: 889, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts, response: {&quot;message&quot;:&quot;&quot;}</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_contact.feature:25 - status code was: 401, expected: 200, response time: 889, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts, response: {&quot;message&quot;:&quot;&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>19:01:03.699 status code was: 401, expected: 200, response time: 889, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts, response: {&quot;message&quot;:&quot;&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == jsonResponse</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

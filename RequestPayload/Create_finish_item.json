@@ -1,0 +1,115 @@
+{
+    "package_item": {
+        "batch_id": "00bcd83326e8824cd92817920419c7a312d2",
+        "package_code": "karate-api-testing-package",
+        "revision_no": 1,
+        "name": "K1-F1-Name",
+        "product_record_code": "K1-F1-Code",
+        "default_code": null,
+        "code": null,
+        "notes": "<p>Finish Item notes</p>",
+        "special_instructions": null,
+        "package_section_name": null,
+        "package_section_code": null,
+        "common_attributes": [
+            {
+                "name": "color",
+                "type": "Text",
+                "rank": 1,
+                "values": [
+                    "red"
+                ]
+            },
+            {
+                "name": "make",
+                "type": "Text",
+                "rank": 2,
+                "values": [
+                    "wood",
+                    "plastic",
+                    "leather"
+                ]
+            }
+        ],
+        "finish_notes": null,
+        "classification": "",
+        "green_building_rating": "",
+        "approval_requirements": [
+            "strike-off",
+            "finish-sample"
+        ],
+        "quantity_unit": "PCS",
+        "total_price": "1353",
+        "discount_price": "0",
+        "vendor": [],
+        "package_record_map": [
+            {
+                "code": null,
+                "floor": "7th floor",
+                "room": "Reception",
+                "parent": null,
+                "no_of_units": 10
+            }
+        ],
+        "product_options": [],
+        "tags": [],
+        "retail_price": "123",
+        "cost_price": "123",
+        "margin_percentage": "10",
+        "sales_price": "135.30"
+    },
+    "product_options": [
+        {
+            "batch_id": "00bcd83326e8824cd92817920419c7a312d2",
+            "code": null,
+            "sku": null,
+            "name": "I90-123-aB",
+            "type": "kristinazanic-glass-mirror-finishes",
+            "brand": "Ikea",
+            "manufacturer": null,
+            "country_of_origin": null,
+            "product_family": null,
+            "model_no": "",
+            "description": "",
+            "featured_image": {
+                "type": "Featured",
+                "file": {
+                    "name": "workstation2.jpg",
+                    "src": "",
+                    "percentage": 0
+                },
+                "ref_id": "74fdd7c898ea394f3498b15926b2b0fc4c1c.jpg",
+                "tags": [],
+                "checked": true
+            },
+            "keyword": [],
+            "style": [],
+            "length": "undefined mm",
+            "height": "undefined mm",
+            "width": "undefined mm",
+            "weight": "undefined lbs",
+            "diameter": "undefined mm",
+            "quantity_unit": "PCS",
+            "unit_price": 0,
+            "currency_code": "AED",
+            "amount": 0,
+            "delivery_duration_type_code": "day",
+            "delivery_duration": "20",
+            "images": [
+                {
+                    "type": "Featured",
+                    "ref_id": "74fdd7c898ea394f3498b15926b2b0fc4c1c.jpg"
+                },
+                {
+                    "type": "Studio",
+                    "ref_id": "74fdd7c898ea394f3498b15926b2b0fc4c1c.jpg"
+                }
+            ],
+            "documents": [],
+            "attributes": [],
+            "part_collection": [],
+            "accessory_collection": [],
+            "finishes": []
+        }
+    ]
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: FeaturePackage/Canvaslogin.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>19 Sep 2021, 19:01</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">FeaturePackage/Canvaslogin.feature</td>
+                    <td      class="passed"    >7</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="2358011700">2s 358ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">FeaturePackage/Canvaslogin.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Generate Auth Token</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">003ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://canvas-dev-api.lovethat.design/api/canvas/v1.0/'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:00:58.249 Environment variable is null 
+19:00:58.254 karate.env = null 
+19:00:58.257 config.baseUrl = https://designer.api.spec.lovethat.design 
+19:00:58.260 config.token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">2s 354ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get access token</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'auth/login'</span>
+  
+  <span class="lead-duration duration">015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = 'application/json'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;user_name&quot;: &quot;likhitha@28lightbulbs.com&quot;,&quot;password&quot;: &quot;28lightbulbs&quot;,&quot;batch_id&quot;: &quot;2ee7f3bd-95bc-4a39-8938-88d86ef47172&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">2s 320ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:00:58.795 request:
+1 &gt; POST https://canvas-dev-api.lovethat.design/api/canvas/v1.0/auth/login
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 117
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: canvas-dev-api.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;user_name&quot;:&quot;likhitha@28lightbulbs.com&quot;,&quot;password&quot;:&quot;28lightbulbs&quot;,&quot;batch_id&quot;:&quot;2ee7f3bd-95bc-4a39-8938-88d86ef47172&quot;}
+
+19:01:00.696 response time in milliseconds: 1899.26
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:00 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-RateLimit-Limit: 240
+1 &lt; X-RateLimit-Remaining: 239
+{&quot;data&quot;:{&quot;user_code&quot;:&quot;likhitha&quot;,&quot;first_name&quot;:&quot;likhitha&quot;,&quot;last_name&quot;:&quot;&quot;,&quot;email&quot;:&quot;likhitha@28lightbulbs.com&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvY2FudmFzLWRldi1hcGkubG92ZXRoYXQuZGVzaWduXC9hcGlcL2NhbnZhc1wvdjEuMFwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NjAsImV4cCI6MTYzMjE1MDA2MCwibmJmIjoxNjMyMDYzNjYwLCJqdGkiOiIxM3g2eElrT2xKOEI3eEhyIiwic3ViIjpudWxsLCJwcnYiOiJlNDM2NDAyZGYzNTczYjgwOTRmMDhlMmI5YWZhYzAzMzA0YzFiZmIxIiwidXNlcl9jYWNoZV9rZXkiOiJleUpwZGlJNklsUm1VR1E0T1RWR1preEhlbVl6VWpWdlRETlVOSGM5UFNJc0luWmhiSFZsSWpvaVdHRmhXalkzZVU5Wk9YcDVUV294TDNaSE5DOVJNbUpDWkZWaloxUmxaVFZoUzJ0Q1pVMUZUVzU2WVd0cGFrZHFlRTF4VmxWamNtTlZlRzVRTDBGcmFpSXNJbTFoWXlJNkltTmpZbVF4WldJd00ySXlZMlE1TmpOaFlqbGtaV0psTnpReU9UUm1OamxoTW1RMFpXVXlOR0ZpT0RJNE5XSmxNakF3TkRNelpUSTVaRFUyWTJGallXWWlmUT09In0.y7mFnbJPq-8E6-znF2UGloISTTSp0Y3lN7LusHqms9Q&quot;,&quot;security_permissions&quot;:{&quot;project&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;project-list&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;project-activity&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;project-history&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;company&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;company-list&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;company-activity&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;company-history&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;contact&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;contact-list&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;contact-activity&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;contact-history&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;project-source&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;project-source-list&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;order&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;order-list&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;order-history&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;deliverable&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;deliverable-list&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;project-status&quot;:{&quot;A&quot;:0,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:0},&quot;admin-list&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;company-types-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;company-roles-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;project-types-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;project-roles-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;deliverable-items-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;order-line-items-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;cost-center-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;source-type-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;project-company-role&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;order-line-item&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;deliverable-status-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;project-status-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;order-drive-link&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;order-contact-roles&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;article&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;article-list&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;email-template-master&quot;:{&quot;A&quot;:1,&quot;U&quot;:1,&quot;V&quot;:1,&quot;D&quot;:1},&quot;email-list&quot;:{&quot;A&quot;:0,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0},&quot;email-view&quot;:{&quot;A&quot;:1,&quot;U&quot;:0,&quot;V&quot;:1,&quot;D&quot;:0}}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response.data.token</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>19:01:00.715 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvY2FudmFzLWRldi1hcGkubG92ZXRoYXQuZGVzaWduXC9hcGlcL2NhbnZhc1wvdjEuMFwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NjAsImV4cCI6MTYzMjE1MDA2MCwibmJmIjoxNjMyMDYzNjYwLCJqdGkiOiIxM3g2eElrT2xKOEI3eEhyIiwic3ViIjpudWxsLCJwcnYiOiJlNDM2NDAyZGYzNTczYjgwOTRmMDhlMmI5YWZhYzAzMzA0YzFiZmIxIiwidXNlcl9jYWNoZV9rZXkiOiJleUpwZGlJNklsUm1VR1E0T1RWR1preEhlbVl6VWpWdlRETlVOSGM5UFNJc0luWmhiSFZsSWpvaVdHRmhXalkzZVU5Wk9YcDVUV294TDNaSE5DOVJNbUpDWkZWaloxUmxaVFZoUzJ0Q1pVMUZUVzU2WVd0cGFrZHFlRTF4VmxWamNtTlZlRzVRTDBGcmFpSXNJbTFoWXlJNkltTmpZbVF4WldJd00ySXlZMlE1TmpOaFlqbGtaV0psTnpReU9UUm1OamxoTW1RMFpXVXlOR0ZpT0RJNE5XSmxNakF3TkRNelpUSTVaRFUyWTJGallXWWlmUT09In0.y7mFnbJPq-8E6-znF2UGloISTTSp0Y3lN7LusHqms9Q</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

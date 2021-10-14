@@ -1,0 +1,89 @@
+{
+    "package_item": {
+        "batch_id": "3f8a8adad31ecd498cd9cfdde10f6dbb8246",
+        "package_code": "karate-api-testing-package",
+        "revision_no": 1,
+        "name": "gtgtg",
+        "product_record_code": "fgf",
+        "default_code": null,
+        "code": null,
+        "notes": null,
+        "special_instructions": null,
+        "package_section_name": null,
+        "package_section_code": null,
+        "common_attributes": [],
+        "finish_notes": null,
+        "classification": "",
+        "green_building_rating": "",
+        "approval_requirements": [],
+        "quantity_unit": "PCS",
+        "total_price": "0",
+        "discount_price": "0",
+        "vendor": [],
+        "package_record_map": [
+            {
+                "code": null,
+                "no_of_units": 0
+            }
+        ],
+        "product_options": [],
+        "tags": [],
+        "retail_price": null,
+        "cost_price": null,
+        "margin_percentage": null,
+        "sales_price": null
+    },
+    "product_options": [
+        {
+            "batch_id": "3f8a8adad31ecd498cd9cfdde10f6dbb8246",
+            "code": null,
+            "sku": null,
+            "name": null,
+            "type": null,
+            "brand": "",
+            "manufacturer": null,
+            "country_of_origin": null,
+            "product_family": null,
+            "model_no": "",
+            "description": "",
+            "featured_image": {
+                "type": "Featured",
+                "file": {
+                    "name": "Company-Pallavi-Desktop.png",
+                    "src": "",
+                    "percentage": 0
+                },
+                "ref_id": "b21013b51c36f14d301890b199d91551281b.png",
+                "tags": [],
+                "checked": true
+            },
+            "keyword": [],
+            "style": [],
+            "length": "undefined mm",
+            "height": "undefined mm",
+            "width": "undefined mm",
+            "weight": "undefined lbs",
+            "diameter": "undefined mm",
+            "quantity_unit": "PCS",
+            "unit_price": 0,
+            "currency_code": "AED",
+            "amount": 0,
+            "delivery_duration_type_code": "day",
+            "images": [
+                {
+                    "type": "Featured",
+                    "ref_id": "b21013b51c36f14d301890b199d91551281b.png"
+                },
+                {
+                    "type": "Studio",
+                    "ref_id": "b21013b51c36f14d301890b199d91551281b.png"
+                }
+            ],
+            "documents": [],
+            "attributes": [],
+            "part_collection": [],
+            "accessory_collection": [],
+            "finishes": []
+        }
+    ]
+}

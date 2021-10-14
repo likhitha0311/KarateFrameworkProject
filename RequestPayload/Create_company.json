@@ -1,0 +1,21 @@
+{
+    "batch_id": "e170fb220887304d9208213011bec1fedb26",
+    "name": "Lenovo Company 55",
+    "address": "address",
+    "city_name": "zambia",
+    "state": "26375644",
+    "zip_code": "976666666",
+    "country_code": "AO",
+    "website": "www.lenovo.com",
+    "tel_no": "87665453543",
+    "fax": "989786565",
+    "email": "lenovo@email.com",
+    "responsible_code": "IIG7F5",
+    "tags": [
+        "company",
+        "kvadrat"
+    ],
+    "industry_type_code": [
+        "architects"
+    ]
+}

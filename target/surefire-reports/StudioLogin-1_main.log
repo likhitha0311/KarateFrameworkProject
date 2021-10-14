@@ -1,0 +1,24 @@
+13:26:43.613 request:
+1 > POST https://auth.api.spec.lovethat.design/api/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 197
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: auth.api.spec.lovethat.design
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{"username":"likhitha@28lightbulbs.com","password":"28lightbulbs","account_code":"garfunkel","application_module":"web-ui-designer","batch_id":"64b57fbc63bba6402768e136b5e3f613bff7","token_b":null}
+
+13:26:45.195 response time in milliseconds: 1575.54
+1 < 200
+1 < Cache-Control: no-cache, private
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 14 Oct 2021 09:26:47 GMT
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 59
+{"data":{"user":{"code":"YB7B8V","first_name":"Likhitha","last_name":null,"email":"likhitha@28lightbulbs.com","profile_image_id":null,"tel_no":"0524242211","website":"www.lovethatdesign.com","avatar_code":"L:1","company_logo_id":"5479baf2b9c7db499ab8e0abe5a557a65224.jpeg","fax_no":"0524242211","security_groups":["admin"],"token_b":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzQyMDM2MDcsImV4cCI6MTYzNDM3NjQwNywibmJmIjoxNjM0MjAzNjA3LCJqdGkiOiJ1cG1qVW9mbTFDTmtmN0F4Iiwic3ViIjoxNCwicHJ2IjoiZjgzOGI5NTA5YWFmOTRjMzM4NmY2NzlmODkyOWNkYzc2N2M3MGYyZiIsInVzZXJfY2FjaGVfa2V5IjoiZXlKcGRpSTZJbE5jTDBKY0x6SnJkak5MYTNsVGRVcFVZWFV3VURBclFUMDlJaXdpZG1Gc2RXVWlPaUpsYzIweFNub3JZbmQ2YnpOY0wydHBTVGxtYzA0eVJWaFFZMHAyYjA1NVpUQndSVzFrYzF3dmNqUTVhbHd2Y2xOb09EazBLMnR1YjBVeVFUUnhWSHB1WWpjeUlpd2liV0ZqSWpvaU5UUm1OV1prWXpVME1HWmhaVEppWWpoa05EZ3daRFF3TnpCaE1XRTFNVE5oT0RCa01EQTVNR1psWm1NME1EZGhZbUprTlRRek16ZG1aR1l4TUdJM01TSjkiLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SWt0SlRGWjBXVWxaZGpjeFZFNWNMMEppWWpKb1lYRm5QVDBpTENKMllXeDFaU0k2SWxjNWJUQTFPRFpZVDJsR1MxQnBOMUpLY2pSR1ZXNXhZMXd2VnpobFQyOWpNR3QwUjBoMFJYTTJRMGt3UFNJc0ltMWhZeUk2SWpBM01HVTBNRGd3Wm1VNE9XVTFObVppTnpVNU16ZzFOV0ppT1dOak9HUTBZVEkzT0dNNVlqTXdNRGN5WXpZeVpXSmxZbVk0WWprM05ETXdZemswTURVaWZRPT0ifQ.twgYeLRSKtUhezW5AAT3qFqUPb3xUlmLYjXqrQb_KKs"},"company":{"code":"garfunkel","logo_image_id":"5479baf2b9c7db499ab8e0abe5a557a65224.jpeg","name":"garfunkel"},"config":[{"type":"api_url","resource":"Product_API_URL","URL":"https:\/\/product.api.spec.lovethat.design\/api"},{"type":"api_url","resource":"Designer_API_URL","URL":"https:\/\/designer.api.spec.lovethat.design\/api\/designer\/v1.0"},{"type":"api_url","resource":"Application_API_URL","URL":"https:\/\/application.api.spec.lovethat.design\/api"},{"type":"api_url","resource":"Storage_Image_API_URL","URL":"https:\/\/images.api.spec.lovethat.design\/garfunkel"},{"type":"api_url","resource":"Storage_Document_API_URL","URL":"https:\/\/documents.api.spec.lovethat.design\/garfunkel"},{"type":"api_url","resource":"Storage_Image_Upload_URL","URL":"https:\/\/image-upload.api.spec.lovethat.design\/uploads\/"},{"type":"api_url","resource":"Storage_Document_Upload_URL","URL":"https:\/\/document-upload.api.spec.lovethat.design\/uploads\/"},{"type":"google_custom_search","resource":"Google_Custom_Search_CX_KEY","KEY":"011561987199445998854%3Awxtthpv7hfc"},{"type":"google_custom_search","resource":"Google_Custom_Search_API_KEY","KEY":"AIzaSyBSDD4QjLRes_76orGSZ0Fh5pIbGO2AGiQ,AIzaSyDKjOLlqQh2nEPos1DMRSBMmMVplpN_Ovs,AIzaSyD1EsbkreHqQkWIRs8jCIFvWwWWuYr3PrM,AIzaSyBoCYDopPS2fAJfEf3oSr8CubvM8wgbXmE,AIzaSyAoLxmAJvmmd8uVlCnhNUFojWYXD_yhHQA,AIzaSyBxPSfIK3PM_f9OA9b9UgzZhb3Cf17xR4c"},{"type":"pusher","resource":"Pusher_API_KEY","KEY":"f26a9d9ba9b7066b9def"},{"type":"pusher","resource":"Pusher_CLUSTER","KEY":"mt1"}]}}
+
+13:26:45.217 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzQyMDM2MDcsImV4cCI6MTYzNDM3NjQwNywibmJmIjoxNjM0MjAzNjA3LCJqdGkiOiJ1cG1qVW9mbTFDTmtmN0F4Iiwic3ViIjoxNCwicHJ2IjoiZjgzOGI5NTA5YWFmOTRjMzM4NmY2NzlmODkyOWNkYzc2N2M3MGYyZiIsInVzZXJfY2FjaGVfa2V5IjoiZXlKcGRpSTZJbE5jTDBKY0x6SnJkak5MYTNsVGRVcFVZWFV3VURBclFUMDlJaXdpZG1Gc2RXVWlPaUpsYzIweFNub3JZbmQ2YnpOY0wydHBTVGxtYzA0eVJWaFFZMHAyYjA1NVpUQndSVzFrYzF3dmNqUTVhbHd2Y2xOb09EazBLMnR1YjBVeVFUUnhWSHB1WWpjeUlpd2liV0ZqSWpvaU5UUm1OV1prWXpVME1HWmhaVEppWWpoa05EZ3daRFF3TnpCaE1XRTFNVE5oT0RCa01EQTVNR1psWm1NME1EZGhZbUprTlRRek16ZG1aR1l4TUdJM01TSjkiLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SWt0SlRGWjBXVWxaZGpjeFZFNWNMMEppWWpKb1lYRm5QVDBpTENKMllXeDFaU0k2SWxjNWJUQTFPRFpZVDJsR1MxQnBOMUpLY2pSR1ZXNXhZMXd2VnpobFQyOWpNR3QwUjBoMFJYTTJRMGt3UFNJc0ltMWhZeUk2SWpBM01HVTBNRGd3Wm1VNE9XVTFObVppTnpVNU16ZzFOV0ppT1dOak9HUTBZVEkzT0dNNVlqTXdNRGN5WXpZeVpXSmxZbVk0WWprM05ETXdZemswTURVaWZRPT0ifQ.twgYeLRSKtUhezW5AAT3qFqUPb3xUlmLYjXqrQb_KKs

@@ -1,0 +1,2905 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Failures Overview</title>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation"  class="active" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>19 Sep 2021, 19:01</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Failures Overview</h2>
+          <p>The following summary displays scenarios that failed.</p>
+      </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+              <div class="elements">
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_Company-feature_2.html">FeaturePackage/Create_Company.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">901ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Delete company</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl+'/hxrhs'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+  
+  <span class="lead-duration duration">896ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:01:01.820 request:
+1 &gt; DELETE https://designer.api.spec.lovethat.design/api/designer/v1.0/companies/hxrhs
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NjEsImV4cCI6MTYzMjIzNjQ2MSwibmJmIjoxNjMyMDYzNjYxLCJqdGkiOiJ6T1RiQ3ZnODdjRk8zUXhKIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWpCak9VOVdObXBOUWtZM1RHZE1VRzE2TmpWRmRWRTlQU0lzSW5aaGJIVmxJam9pWkdoSVozSklNRTFqU0RKb1ZIVlZlR2tyWkdGU1oxZG9NVGhuU21ZeVRtaFVTRnd2WjJOVWJEaGtVR2RrWlNzd1EwcFZaVVZ6TVVrNU9YaDVhWE52VVU0aUxDSnRZV01pT2lJeVl6RmlZakkyWldReE5tTmlabUUzWVdVME0yUmxORGc1WkRGa01EbGtPVGcxTXpRM01qRXhaV0V5TURZM09EQmhaamhsTldSbU16ZzNPR00yTVRrMEluMD0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SW1WTlZGaGtPVk5IZGtobFUzQXJhekl6YUdWRFNtYzlQU0lzSW5aaGJIVmxJam9pZW1kclYzVkRXbXh1ZG5OcWVFVTFWM2t4YzFwbVJFRmhjVU41YTJwS00zZHpRVXg0Vm1abVkwMW9jejBpTENKdFlXTWlPaUprTldZMFkyWTJNamc0TkdNMU1XWTFaVFE0TmpBeVltWTFOekUzTVdGaU9XVXlOV1UzWmpNM01HSTNPVEpsWXpsbU56SXpZVGN4TVdRNE1UWXhaREF5SW4wPSJ9.JHWKE1fHuP8jFCrRJINAHRuetkkqsG_SBjkLx1y875w
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Type: application/json
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+
+19:01:02.712 response time in milliseconds: 891.56
+1 &lt; 400
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:02 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+{&quot;error&quot;:&quot;Bad request&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>com.intuit.karate.exception.KarateException: Create_Company.feature:50 - status code was: 400, expected: 200, response time: 892, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies/hxrhs, response: {&quot;error&quot;:&quot;Bad request&quot;}</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_Company.feature:50 - status code was: 400, expected: 200, response time: 892, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies/hxrhs, response: {&quot;error&quot;:&quot;Bad request&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>19:01:02.714 status code was: 400, expected: 200, response time: 892, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies/hxrhs, response: {&quot;error&quot;:&quot;Bad request&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_Company-feature_2.html">FeaturePackage/Create_Company.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">964ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create company without city name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-6" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = cname</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.city_name = null</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">963ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>19:01:04.908 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/companies
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NjQsImV4cCI6MTYzMjIzNjQ2NCwibmJmIjoxNjMyMDYzNjY0LCJqdGkiOiJRS3dMdjVUTVJ1Ym5TRHcyIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWxkUlhDOXBhMHhoVVZScFprMUpVbWR1WWxCVFlreFJQVDBpTENKMllXeDFaU0k2SWxSeVlrNWNMM0pSV0ZaM05tcGtVakpHUzAxU1ozQnBkRXBpTjNKcWNETnpNSEpQTmxWU05qaFNPSEo1VkRVeFpsTm1aV3hJTWxrMk1FcDZjM0F4TjJwbElpd2liV0ZqSWpvaU1qTTJaRFZpWkRFNE9ESTJaRFkzTUdVeE1tRTJaREExTkRRNU5UTTBabUl3TmpJMk16QTFORGswWWpVeFlqTmxNVEUyT1dObU9HWmpOV0ZpTVRabVl5SjkiLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SWpsT2NFdElaMDFZTUZwTGVsTnRORlJLVkU5Q1ZtYzlQU0lzSW5aaGJIVmxJam9pUkRVM2FqWm9TelpyU3pCbU5ISnNWRmxUTWpGWlJHdHZSM2hsVW5ob2VFRk1jSEpGVVRkV1VIbGhkejBpTENKdFlXTWlPaUpqTXpaaU5qQmlNREZsWmpRNVkyRTVNek15T0dVM1lXWXdPV0UxWXpoaE9EYzRZVGRrT0RVM05tWTBaRGxoTkRsa09UYzVOalF5TkRreU1EVmtObUl3SW4wPSJ9.TjZmv9reyGYHyTsbGECaJcD7yHpJ7WynBDkBxvGTeJw
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 353
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;batch_id&quot;:&quot;e170fb220887304d9208213011bec1fedb26&quot;,&quot;name&quot;:&quot;OUPWD&quot;,&quot;address&quot;:&quot;address&quot;,&quot;city_name&quot;:null,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;country_code&quot;:&quot;AO&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;responsible_code&quot;:&quot;IIG7F5&quot;,&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;industry_type_code&quot;:[&quot;architects&quot;]}
+
+19:01:05.869 response time in milliseconds: 959.99
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:05 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{&quot;data&quot;:{&quot;name&quot;:&quot;OUPWD&quot;,&quot;code&quot;:&quot;oupwd&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>com.intuit.karate.exception.KarateException: Create_Company.feature:79 - status code was: 200, expected: 400, response time: 960, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;OUPWD&quot;,&quot;code&quot;:&quot;oupwd&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_Company.feature:79 - status code was: 200, expected: 400, response time: 960, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;OUPWD&quot;,&quot;code&quot;:&quot;oupwd&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>19:01:05.870 status code was: 200, expected: 400, response time: 960, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;OUPWD&quot;,&quot;code&quot;:&quot;oupwd&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print 'Response is ',response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_Company-feature_2.html">FeaturePackage/Create_Company.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">962ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create company with valid and invalid city name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = cname</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.city_name = '12345'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">958ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>19:01:06.901 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/companies
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NjYsImV4cCI6MTYzMjIzNjQ2NiwibmJmIjoxNjMyMDYzNjY2LCJqdGkiOiIzb3J6RDAxeTFVbkFscWRvIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWpWYWVYQktiVlpvY2l0dVFuTlRPVGQyUlhsbmNFRTlQU0lzSW5aaGJIVmxJam9pWXl0Y0wzaEVlbFUzYVRGMU5HaFpVMFpsUTBoQk1WaG5TSGd6Wmt0Q1RtZFJSMDlhTWxSRWFqWk9XRmRLWjFJcmRXbzVablZ1ZW5WeVpIWk1kamRMTXpRaUxDSnRZV01pT2lKbU1UazFaVGRpTURjeE9HWmtPV013TXpnMk9EQXhZekl6TXpKbFpXUTFOR1k1TVRNMVpqZ3lNRE5oWXpWaFpERTFNRFJsWTJFMU0yTTBOV0V4WWpneEluMD0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SW05RVFXeDJlalkyVG5OTVlYTjJUamh5VFdjelRIYzlQU0lzSW5aaGJIVmxJam9pUkhaU1JFdFRRa0U1YWxSTmFqVjFXRlYyWkhGWmVHdFNaWFV3ZFdOcVJHWmliRGR2ZG5ocWJVOWtORDBpTENKdFlXTWlPaUpqTm1KallXWmlNRE16TW1ZNU9XVXdZbUV5WW1Wak1XRXlNRFUyTldVMk9ESXpOVEJpT0RGaFlXTXdPVEl3WkdabE5qVTBZVEJtTjJOaFpEVmxORFV3SW4wPSJ9.9lU82stf0gNeo75Z-aplwlKHdDX9kTLAkX4ycRiOmjQ
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 356
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;batch_id&quot;:&quot;e170fb220887304d9208213011bec1fedb26&quot;,&quot;name&quot;:&quot;PG2mY&quot;,&quot;address&quot;:&quot;address&quot;,&quot;city_name&quot;:&quot;12345&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;country_code&quot;:&quot;AO&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;responsible_code&quot;:&quot;IIG7F5&quot;,&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;industry_type_code&quot;:[&quot;architects&quot;]}
+
+19:01:07.857 response time in milliseconds: 955.94
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:07 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{&quot;data&quot;:{&quot;name&quot;:&quot;PG2mY&quot;,&quot;code&quot;:&quot;pg2my&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;12345&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+          <a>com.intuit.karate.exception.KarateException: Create_Company.feature:88 - status code was: 200, expected: 400, response time: 956, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;PG2mY&quot;,&quot;code&quot;:&quot;pg2my&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;12345&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_Company.feature:88 - status code was: 200, expected: 400, response time: 956, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;PG2mY&quot;,&quot;code&quot;:&quot;pg2my&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;12345&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>19:01:07.857 status code was: 200, expected: 400, response time: 956, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;PG2mY&quot;,&quot;code&quot;:&quot;pg2my&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;12345&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_Company-feature_2.html">FeaturePackage/Create_Company.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">950ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create company with valid and invalid city name</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = cname</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.city_name = ']{}$%^&amp;'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">945ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>19:01:07.723 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/companies
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NjcsImV4cCI6MTYzMjIzNjQ2NywibmJmIjoxNjMyMDYzNjY3LCJqdGkiOiI4bUUwOHdDNXA1Mks0bjRhIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWpnNUsycHRhRzUwYWxKNk9FRmtlbE5PV2sxS1NrRTlQU0lzSW5aaGJIVmxJam9pSzJGdlVHVkxkbTVuY1Uxb1NUQm1LelJwZVdabVZqVm9aa2hRTmtWdFFXcEpjalZCV0hjcmVGcGpiVlpXWVdNMmIzTTFhMk5JWlZ3dkszaFRjMlZ2UzJnaUxDSnRZV01pT2lJME1XWmlOVGhrWVdNNE9XSmxObVEzWm1GbE9EaGpOamt5TnpaaE9ESTBaR00xWVRZd1pqZzVOVGN3WVdJeVlXRTNZalF4WmpkaU56VXpZVFl5WkRBM0luMD0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SW1oVmJuaEhja1YyV1VGamRXdFpVbkZWYTFkc1RWRTlQU0lzSW5aaGJIVmxJam9pVlVkM1VqSkhNVGxQY1dSWmJGaDFkbXRUYzA4M1ZFVllPSEJLVVVWUmNHMVNjREZKWVhsSFVXMUVXVDBpTENKdFlXTWlPaUprT1dZNU5tTmhPVEkwTWpVMlpqYzVOalpsTW1ZeU1EVTNaREl5WXpVMk1UZ3haREJpT1RWbE1EQXdNbUkxWVdRek1UQTNZVEV4TURsaVpXRXdZMk0wSW4wPSJ9.WDV5Hl6-71Vu8nz8uw4wC9egyeRjymzMV94v2NBqEso
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 358
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;batch_id&quot;:&quot;e170fb220887304d9208213011bec1fedb26&quot;,&quot;name&quot;:&quot;n0LBO&quot;,&quot;address&quot;:&quot;address&quot;,&quot;city_name&quot;:&quot;]{}$%^&amp;&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;country_code&quot;:&quot;AO&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;responsible_code&quot;:&quot;IIG7F5&quot;,&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;industry_type_code&quot;:[&quot;architects&quot;]}
+
+19:01:08.666 response time in milliseconds: 942.02
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:08 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{&quot;data&quot;:{&quot;name&quot;:&quot;n0LBO&quot;,&quot;code&quot;:&quot;n0lbo&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;]{}$%^&amp;&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>com.intuit.karate.exception.KarateException: Create_Company.feature:88 - status code was: 200, expected: 400, response time: 942, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;n0LBO&quot;,&quot;code&quot;:&quot;n0lbo&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;]{}$%^&amp;&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_Company.feature:88 - status code was: 200, expected: 400, response time: 942, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;n0LBO&quot;,&quot;code&quot;:&quot;n0lbo&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;]{}$%^&amp;&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>19:01:08.667 status code was: 200, expected: 400, response time: 942, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;n0LBO&quot;,&quot;code&quot;:&quot;n0lbo&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;]{}$%^&amp;&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_Company-feature_2.html">FeaturePackage/Create_Company.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 233ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Create company with invalid telephone number</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-22">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = cname</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.tel_no = '$%^&amp;_(('</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">1s 228ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>19:01:09.735 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/companies
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NjksImV4cCI6MTYzMjIzNjQ2OSwibmJmIjoxNjMyMDYzNjY5LCJqdGkiOiJDU0p1b1pkbmR2anExMjBZIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SW1WVVZUZHVlRWxaT0RKWGMwMHlhMUZRTTFkdmRVRTlQU0lzSW5aaGJIVmxJam9pYjBwaFVXbElSM1pHYkhkWWJVTlJjbWhCTUZ3dmMxUTVhV2t5ZEZwVlRVVlVVWGRjTDJsYVQxd3ZNMkpJWEM5a2N6UnVUV0phYkdaUGNYVTBlbk5DV2t0VFEwRWlMQ0p0WVdNaU9pSTVNR1ExTVdFek1XWTVOamRpTVdZNE5XWTFZakE0TW1VNVpEZzBZVEUxWWpsaU1UY3pOakF4WVRsak5UWmpOV1ExTldVMk56bGtaREJrTnpoaU5qZzNJbjA9IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklsaFVkbmR0V25rNVQxd3ZWekpIVmpGVGVGRjZjRE5SUFQwaUxDSjJZV3gxWlNJNklscExjMHd3VERGaVJGTmlTak53Ym1ST1JWVnNhemdyVDNGNVUxWjBXVE1yVUZ3dmF6VlVVakV5VEVwTlBTSXNJbTFoWXlJNklqazRPRFUzTm1FMU5UazJNamt4TXpJd1pUSTFZVEZqTjJZd1pEQXhaVEJpWWpFMk16TTJOR1JpWVRFNU16SXdaR0l5WkdWa1pUSm1ZVFV5WldGak16TWlmUT09In0.i8sLqOryVJgmjKvfAsuaGiNXwW5N9Gg5aTjxQcgxmJY
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 353
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;batch_id&quot;:&quot;e170fb220887304d9208213011bec1fedb26&quot;,&quot;name&quot;:&quot;tnpyF&quot;,&quot;address&quot;:&quot;address&quot;,&quot;city_name&quot;:&quot;zambia&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;country_code&quot;:&quot;AO&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;tel_no&quot;:&quot;$%^&amp;_((&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;responsible_code&quot;:&quot;IIG7F5&quot;,&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;industry_type_code&quot;:[&quot;architects&quot;]}
+
+19:01:10.960 response time in milliseconds: 1225.07
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:10 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{&quot;data&quot;:{&quot;name&quot;:&quot;tnpyF&quot;,&quot;code&quot;:&quot;tnpyf&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;zambia&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;$%^&amp;_((&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-24">
+          <a>com.intuit.karate.exception.KarateException: Create_Company.feature:103 - status code was: 200, expected: 400, response time: 1225, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;tnpyF&quot;,&quot;code&quot;:&quot;tnpyf&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;zambia&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;$%^&amp;_((&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_Company.feature:103 - status code was: 200, expected: 400, response time: 1225, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;tnpyF&quot;,&quot;code&quot;:&quot;tnpyf&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;zambia&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;$%^&amp;_((&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>19:01:10.962 status code was: 200, expected: 400, response time: 1225, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/companies, response: {&quot;data&quot;:{&quot;name&quot;:&quot;tnpyF&quot;,&quot;code&quot;:&quot;tnpyf&quot;,&quot;address&quot;:&quot;address&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;city_name&quot;:&quot;zambia&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;tel_no&quot;:&quot;$%^&amp;_((&quot;,&quot;industry_type&quot;:[{&quot;name&quot;:&quot;Architects&quot;,&quot;code&quot;:&quot;architects&quot;}],&quot;country&quot;:{&quot;name&quot;:&quot;Angola&quot;,&quot;code&quot;:&quot;AO&quot;},&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;responsible&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_Company-feature_2.html">FeaturePackage/Create_Company.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">916ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-26">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create company with invalid industry type</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-26" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-27">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = cname</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.industry_type_code = &quot;Not an industry type&quot;</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">905ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>19:01:13.413 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/companies
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NzMsImV4cCI6MTYzMjIzNjQ3MywibmJmIjoxNjMyMDYzNjczLCJqdGkiOiJieFdibXQyVDVzajRVUUxpIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtReVRGQnJiM0JLYW0xWk1IVkthM2M0ZFRWSFVXYzlQU0lzSW5aaGJIVmxJam9pZHpGQlNVdGtSME5CTVdwRVp6UldZMDQzUmpBMU4yMXJUMmh6YWt0WVNWaExjME14VWtremEwZDFNekYwZFV3elp5dElSRGR0TVROc1ZteFZhSGRKYWlJc0ltMWhZeUk2SWpneU1HSTRPVE01WkdSa09URXlNMlJsWVRWa01HUmxZMlptWXpJNE9Ua3dPVE01TjJKbU1EUTJZamhoTVdKa05EVmpNemc0TlRaak5EZGxOVGd6TnpRaWZRPT0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SWxkRVZteGxOSGs0VlZkTVQzbGpOM0ZHWW01RFJXYzlQU0lzSW5aaGJIVmxJam9pUzJwcmQzTk1iVU5VTUdsMFptdEJNMVJTY1hSVVRtWlVjRFpIYkdGaWVrdHhhVkZSYm10SWJHbHdkejBpTENKdFlXTWlPaUk1TnpjeE16TmtOMlEzTTJKak9UY3dOamhrTVRVNVpUTXhaR1JqTjJSallXUXlPVEZrWTJNNU1tSXdNVGhsT0RWbU1HWXlZV013TnpOa01XUTBZakEzSW4wPSJ9.yfTcrWqO8yGOz1ghEFrI4GCI7Uw4Bq1vaY7E1v2r4kM
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 365
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;batch_id&quot;:&quot;e170fb220887304d9208213011bec1fedb26&quot;,&quot;name&quot;:&quot;XrN4E&quot;,&quot;address&quot;:&quot;address&quot;,&quot;city_name&quot;:&quot;zambia&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;country_code&quot;:&quot;AO&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;responsible_code&quot;:&quot;IIG7F5&quot;,&quot;tags&quot;:[&quot;company&quot;,&quot;kvadrat&quot;],&quot;industry_type_code&quot;:&quot;Not an industry type&quot;}
+
+19:01:14.315 response time in milliseconds: 901.77
+1 &lt; 400
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:14 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+{&quot;error&quot;:&quot;Bad request&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { &quot;error&quot;: &quot;The industry type code must be valid.&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
+          <a>com.intuit.karate.exception.KarateException: Create_Company.feature:139 - path: $.error, actual: 'Bad request', expected: 'The industry type code must be valid.', reason: not equal</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_Company.feature:139 - path: $.error, actual: 'Bad request', expected: 'The industry type code must be valid.', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>19:01:14.316 assertion failed: path: $.error, actual: 'Bad request', expected: 'The industry type code must be valid.', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_Company-feature_2.html">FeaturePackage/Create_Company.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">936ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create company with invalid tags (not an array list)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = cname</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.tags = &quot;tag-check&quot;</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">925ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>19:01:14.016 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/companies
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NzMsImV4cCI6MTYzMjIzNjQ3MywibmJmIjoxNjMyMDYzNjczLCJqdGkiOiI0QWlMMDZZb3lNcEFMNktQIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWxvNVFWd3ZSV3RwUjNReVJWbHRRbTgwTUU1UU9YVm5QVDBpTENKMllXeDFaU0k2SW5CMFJrazBkMVpMV2s5elNYQlFXa2wzVkhodlluZEJRaXRRYzNkcEsyNWhNVU5QUWtSYU16WkhORXQwZUZaRmJuTnlVMmhpYjBWUWVEVkVUemRIZDNVaUxDSnRZV01pT2lJNVpXWXdaamd6WmpCak1qQmhZelUyWVdKa05UVmpaVFV5TlRaak1qaGhaVE5sWVdGbU0yTmhZVFJpTlRBMU16QXlOVFkzWVRsa1pXUXhZakF5TlRBM0luMD0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SWxFNFlVZG5SemRxVVhodFUxZzJXSEUwUTJGeU1HYzlQU0lzSW5aaGJIVmxJam9pV1ZSd1VsTjRSREJIT0ZCaU1EUllPR05MYlhNek4yc3lWbE5GYjNGQmVWaENSa1F6VDJWS1RGbDRWVDBpTENKdFlXTWlPaUpqT1dFeU1qQTBaalEwWldRd056QXpaakl6TkdZek5HRmlNbUpqTW1ZM1pEazFNR0kyTWpZMVpEa3hNelJqWldGaE1tVTJNbVF3Tmprek9XWXlZemt6SW4wPSJ9.NpIgJVEuS0bldm9rH0SOExQKlp2rS1p3JpatdrH8Wxw
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 347
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;batch_id&quot;:&quot;e170fb220887304d9208213011bec1fedb26&quot;,&quot;name&quot;:&quot;omdXq&quot;,&quot;address&quot;:&quot;address&quot;,&quot;city_name&quot;:&quot;zambia&quot;,&quot;state&quot;:&quot;26375644&quot;,&quot;zip_code&quot;:&quot;976666666&quot;,&quot;country_code&quot;:&quot;AO&quot;,&quot;website&quot;:&quot;www.lenovo.com&quot;,&quot;tel_no&quot;:&quot;87665453543&quot;,&quot;fax&quot;:&quot;989786565&quot;,&quot;email&quot;:&quot;lenovo@email.com&quot;,&quot;responsible_code&quot;:&quot;IIG7F5&quot;,&quot;tags&quot;:&quot;tag-check&quot;,&quot;industry_type_code&quot;:[&quot;architects&quot;]}
+
+19:01:14.937 response time in milliseconds: 919.76
+1 &lt; 400
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:14 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+{&quot;error&quot;:&quot;Bad request&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { &quot;error&quot;: &quot;The tag input must be valid.&quot;}</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-34">
+          <a>com.intuit.karate.exception.KarateException: Create_Company.feature:148 - path: $.error, actual: 'Bad request', expected: 'The tag input must be valid.', reason: not equal</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_Company.feature:148 - path: $.error, actual: 'Bad request', expected: 'The tag input must be valid.', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-35">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details">
+        <pre>19:01:14.940 assertion failed: path: $.error, actual: 'Bad request', expected: 'The tag input must be valid.', reason: not equal</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Create_contact-feature_3.html">FeaturePackage/Create_contact.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_tag1.html">@tag1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">899ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a contact in addressbook with all valid details</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-36" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path pathUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request jsonPayload</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.name = name</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonPayload.email = name +'@gmail.com'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonResponse.data.name = name</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">set jsonResponse.data.email = name +'@gmail.com'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">892ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>19:01:02.808 request:
+1 &gt; POST https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts
+1 &gt; Accept: application/json
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 500
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;project_code&quot;:null,&quot;opportunity_code&quot;:null,&quot;batch_id&quot;:&quot;2718fa571969d14f021b0831ab08d4e44850&quot;,&quot;company_code&quot;:&quot;28lightbulbs&quot;,&quot;profile_image_id&quot;:&quot;&quot;,&quot;name&quot;:&quot;617po&quot;,&quot;designation&quot;:&quot;developer&quot;,&quot;mobile_no1&quot;:&quot;000088888&quot;,&quot;mobile_no2&quot;:null,&quot;tel_no1&quot;:&quot;8796778888&quot;,&quot;email&quot;:&quot;617po@gmail.com&quot;,&quot;linked_in_url&quot;:&quot;https://test-designer.lovethat.design/address-book/contacts&quot;,&quot;facebook_url&quot;:null,&quot;blog_url&quot;:null,&quot;company_name&quot;:null,&quot;lead_source&quot;:&quot;facebook&quot;,&quot;tags&quot;:[&quot;contact tags&quot;],&quot;showMobile&quot;:false,&quot;showPhone&quot;:false}
+
+19:01:03.698 response time in milliseconds: 888.77
+1 &lt; 401
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:03 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+{
+    &quot;message&quot;: &quot;&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-39">
+          <a>com.intuit.karate.exception.KarateException: Create_contact.feature:25 - status code was: 401, expected: 200, response time: 889, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts, response: {&quot;message&quot;:&quot;&quot;}</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Create_contact.feature:25 - status code was: 401, expected: 200, response time: 889, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts, response: {&quot;message&quot;:&quot;&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>19:01:03.699 status code was: 401, expected: 200, response time: 889, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts, response: {&quot;message&quot;:&quot;&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == jsonResponse</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Get_All_Addressbook_Contacts-feature_4.html">FeaturePackage/Get_All_Addressbook_Contacts.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_tag1.html">@tag1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">873ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all addressbook contacts</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-42">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-42" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts/filter?search=&amp;page_no=1&amp;page_size=10&amp;sort_by=&amp;contact=&amp;company=&amp;interaction_date=&amp;industryType_code=&amp;country_code=&amp;owner_code=&amp;tag=&amp;isFilterEnabled=false'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">864ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-43">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details">
+        <pre>19:01:03.763 request:
+1 &gt; GET https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts/filter?search=&amp;page_no=1&amp;page_size=10&amp;sort_by=&amp;contact=&amp;company=&amp;interaction_date=&amp;industryType_code=&amp;country_code=&amp;owner_code=&amp;tag=&amp;isFilterEnabled=false
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzA0MDAxNzgsImV4cCI6MTYzMDU3Mjk3OCwibmJmIjoxNjMwNDAwMTc4LCJqdGkiOiI2dVR5UURPY3pNNGxCeEdkIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SW05U05qa3lOMDVQTlRCNFZYWXlSMnRtZGtRclpFRTlQU0lzSW5aaGJIVmxJam9pVUVkSFdWWjFSWEJ4WWtsa2VtaFVRMVJYUmtGcGVHYzFTa0V5WWpRMVJVWktWa1JyY3pGTVVFdEhLMDFhTkc0MGJsQkdhRXBSTTJwVVIwMXFaVEZGTmlJc0ltMWhZeUk2SW1WbE1tUm1aamxrTWpjd05tVXpaR1k1TURsaVltVTVNRGt3T0RnNU56bGhNR00yWWpVMk1qUTJOekUyWkdZNU1URmhaVGRpTkdZeFpqWTFaR1F3TXpNaWZRPT0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SW1oQllYUm5kWGRjTDJOblZuWndXVWxFYVd0SmFWcEJQVDBpTENKMllXeDFaU0k2SWxwVmRWUnFSSHBtWEM5VVUwZHNlVTFVVDJjNFpqaEhRVEIyVlRFNGRYbGtXamxYVWpoQlpGQldVV1ozUFNJc0ltMWhZeUk2SWpNNU5XUm1NR05tWVdFME5EZGhZelZoWTJaaE5EUm1aRGMwWTJVMk1EaGtaV1l6TW1ReE9XRmlORFZqTm1WbU5EYzFaVEkxWkdKaVlUVmpOekpqWlRNaWZRPT0ifQ.3aeqwZtm5gq1WeGKUK7zxHAR3IjPq9y2Fb3_ZKM-B1Q
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+
+19:01:04.619 response time in milliseconds: 855.08
+1 &lt; 401
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; date: Sun, 19 Sep 2021 15:01:04 GMT
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot; /&gt;
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                    &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-44">
+          <a>com.intuit.karate.exception.KarateException: Get_All_Addressbook_Contacts.feature:14 - status code was: 401, expected: 200, response time: 855, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts/filter?search=&amp;page_no=1&amp;page_size=10&amp;sort_by=&amp;contact=&amp;company=&amp;interaction_date=&amp;industryType_code=&amp;country_code=&amp;owner_code=&amp;tag=&amp;isFilterEnabled=false, response: &lt;html&gt;</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Get_All_Addressbook_Contacts.feature:14 - status code was: 401, expected: 200, response time: 855, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts/filter?search=&amp;page_no=1&amp;page_size=10&amp;sort_by=&amp;contact=&amp;company=&amp;interaction_date=&amp;industryType_code=&amp;country_code=&amp;owner_code=&amp;tag=&amp;isFilterEnabled=false, response: &lt;html&gt;
+        
+    &lt;head&gt;
+        &lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                
+        &lt;meta content=&quot;noindex,nofollow&quot; name=&quot;robots&quot;&gt;
+                
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+            
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+                                
+        &lt;div class=&quot;container&quot;&gt;
+                                
+            &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                            
+        &lt;/div&gt;
+            
+    &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>19:01:04.632 status code was: 401, expected: 200, response time: 855, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts/filter?search=&amp;page_no=1&amp;page_size=10&amp;sort_by=&amp;contact=&amp;company=&amp;interaction_date=&amp;industryType_code=&amp;country_code=&amp;owner_code=&amp;tag=&amp;isFilterEnabled=false, response: &lt;html&gt;
+        
+    &lt;head&gt;
+        &lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                
+        &lt;meta content=&quot;noindex,nofollow&quot; name=&quot;robots&quot;&gt;
+                
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+            
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+                                
+        &lt;div class=&quot;container&quot;&gt;
+                                
+            &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                            
+        &lt;/div&gt;
+            
+    &lt;/body&gt;
+    
+&lt;/html&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.list_info.count == 519</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Get_All_Opportunities-feature_5.html">FeaturePackage/Get_All_Opportunities.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 138ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all Opportunities</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-47">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://designer.api.spec.lovethat.design/api/designer/v1.0/opportunities/filter?page_no=1&amp;page_size=50&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;close_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;isFilterEnabled=false&amp;tag=&amp;flag_codes=&amp;project_types=&amp;type='</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1s 128ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>13:31:26.698 request:
+1 &gt; GET https://designer.api.spec.lovethat.design/api/designer/v1.0/opportunities/filter?page_no=1&amp;page_size=50&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;close_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;isFilterEnabled=false&amp;tag=&amp;flag_codes=&amp;project_types=&amp;type=
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzA0MDAxNzgsImV4cCI6MTYzMDU3Mjk3OCwibmJmIjoxNjMwNDAwMTc4LCJqdGkiOiI2dVR5UURPY3pNNGxCeEdkIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SW05U05qa3lOMDVQTlRCNFZYWXlSMnRtZGtRclpFRTlQU0lzSW5aaGJIVmxJam9pVUVkSFdWWjFSWEJ4WWtsa2VtaFVRMVJYUmtGcGVHYzFTa0V5WWpRMVJVWktWa1JyY3pGTVVFdEhLMDFhTkc0MGJsQkdhRXBSTTJwVVIwMXFaVEZGTmlJc0ltMWhZeUk2SW1WbE1tUm1aamxrTWpjd05tVXpaR1k1TURsaVltVTVNRGt3T0RnNU56bGhNR00yWWpVMk1qUTJOekUyWkdZNU1URmhaVGRpTkdZeFpqWTFaR1F3TXpNaWZRPT0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SW1oQllYUm5kWGRjTDJOblZuWndXVWxFYVd0SmFWcEJQVDBpTENKMllXeDFaU0k2SWxwVmRWUnFSSHBtWEM5VVUwZHNlVTFVVDJjNFpqaEhRVEIyVlRFNGRYbGtXamxYVWpoQlpGQldVV1ozUFNJc0ltMWhZeUk2SWpNNU5XUm1NR05tWVdFME5EZGhZelZoWTJaaE5EUm1aRGMwWTJVMk1EaGtaV1l6TW1ReE9XRmlORFZqTm1WbU5EYzFaVEkxWkdKaVlUVmpOekpqWlRNaWZRPT0ifQ.3aeqwZtm5gq1WeGKUK7zxHAR3IjPq9y2Fb3_ZKM-B1Q
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+
+13:31:27.817 response time in milliseconds: 1117.18
+1 &lt; 401
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; date: Sun, 19 Sep 2021 09:31:29 GMT
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot; /&gt;
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                    &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-49">
+          <a>com.intuit.karate.exception.KarateException: Get_All_Opportunities.feature:12 - status code was: 401, expected: 200, response time: 1117, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/opportunities/filter?page_no=1&amp;page_size=50&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;close_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;isFilterEnabled=false&amp;tag=&amp;flag_codes=&amp;project_types=&amp;type=, response: &lt;html&gt;</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Get_All_Opportunities.feature:12 - status code was: 401, expected: 200, response time: 1117, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/opportunities/filter?page_no=1&amp;page_size=50&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;close_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;isFilterEnabled=false&amp;tag=&amp;flag_codes=&amp;project_types=&amp;type=, response: &lt;html&gt;
+        
+    &lt;head&gt;
+        &lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                
+        &lt;meta content=&quot;noindex,nofollow&quot; name=&quot;robots&quot;&gt;
+                
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+            
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+                                
+        &lt;div class=&quot;container&quot;&gt;
+                                
+            &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                            
+        &lt;/div&gt;
+            
+    &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>13:31:27.830 status code was: 401, expected: 200, response time: 1117, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/opportunities/filter?page_no=1&amp;page_size=50&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;close_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;isFilterEnabled=false&amp;tag=&amp;flag_codes=&amp;project_types=&amp;type=, response: &lt;html&gt;
+        
+    &lt;head&gt;
+        &lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                
+        &lt;meta content=&quot;noindex,nofollow&quot; name=&quot;robots&quot;&gt;
+                
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+            
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+                                
+        &lt;div class=&quot;container&quot;&gt;
+                                
+            &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                            
+        &lt;/div&gt;
+            
+    &lt;/body&gt;
+    
+&lt;/html&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_FeaturePackage-Get_All_Projects-feature_6.html">FeaturePackage/Get_All_Projects.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_tag1.html">@tag1</a>
+      </div>
+
+  
+  <span class="lead-duration duration">965ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-51">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all studio projects list</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-51" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-52">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-52" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://designer.api.spec.lovethat.design/api/designer/v1.0/projects/filter?page_no=1&amp;page_size=5&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;start_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;tag=&amp;groups=&amp;project_types=&amp;project_code=&amp;isFilterEnabled=true&amp;flag_codes='</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">957ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details">
+        <pre>13:09:54.914 request:
+1 &gt; GET https://designer.api.spec.lovethat.design/api/designer/v1.0/projects/filter?page_no=1&amp;page_size=5&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;start_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;tag=&amp;groups=&amp;project_types=&amp;project_code=&amp;isFilterEnabled=true&amp;flag_codes=
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzA0MDAxNzgsImV4cCI6MTYzMDU3Mjk3OCwibmJmIjoxNjMwNDAwMTc4LCJqdGkiOiI2dVR5UURPY3pNNGxCeEdkIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SW05U05qa3lOMDVQTlRCNFZYWXlSMnRtZGtRclpFRTlQU0lzSW5aaGJIVmxJam9pVUVkSFdWWjFSWEJ4WWtsa2VtaFVRMVJYUmtGcGVHYzFTa0V5WWpRMVJVWktWa1JyY3pGTVVFdEhLMDFhTkc0MGJsQkdhRXBSTTJwVVIwMXFaVEZGTmlJc0ltMWhZeUk2SW1WbE1tUm1aamxrTWpjd05tVXpaR1k1TURsaVltVTVNRGt3T0RnNU56bGhNR00yWWpVMk1qUTJOekUyWkdZNU1URmhaVGRpTkdZeFpqWTFaR1F3TXpNaWZRPT0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SW1oQllYUm5kWGRjTDJOblZuWndXVWxFYVd0SmFWcEJQVDBpTENKMllXeDFaU0k2SWxwVmRWUnFSSHBtWEM5VVUwZHNlVTFVVDJjNFpqaEhRVEIyVlRFNGRYbGtXamxYVWpoQlpGQldVV1ozUFNJc0ltMWhZeUk2SWpNNU5XUm1NR05tWVdFME5EZGhZelZoWTJaaE5EUm1aRGMwWTJVMk1EaGtaV1l6TW1ReE9XRmlORFZqTm1WbU5EYzFaVEkxWkdKaVlUVmpOekpqWlRNaWZRPT0ifQ.3aeqwZtm5gq1WeGKUK7zxHAR3IjPq9y2Fb3_ZKM-B1Q
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+
+13:09:55.864 response time in milliseconds: 947.84
+1 &lt; 401
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; date: Sun, 19 Sep 2021 09:09:57 GMT
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+        &lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot; /&gt;
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+                        &lt;div class=&quot;container&quot;&gt;
+                    &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-54">
+          <a>com.intuit.karate.exception.KarateException: Get_All_Projects.feature:31 - status code was: 401, expected: 200, response time: 948, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/projects/filter?page_no=1&amp;page_size=5&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;start_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;tag=&amp;groups=&amp;project_types=&amp;project_code=&amp;isFilterEnabled=true&amp;flag_codes=, response: &lt;html&gt;</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: Get_All_Projects.feature:31 - status code was: 401, expected: 200, response time: 948, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/projects/filter?page_no=1&amp;page_size=5&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;start_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;tag=&amp;groups=&amp;project_types=&amp;project_code=&amp;isFilterEnabled=true&amp;flag_codes=, response: &lt;html&gt;
+        
+    &lt;head&gt;
+        &lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                
+        &lt;meta content=&quot;noindex,nofollow&quot; name=&quot;robots&quot;&gt;
+                
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+            
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+                                
+        &lt;div class=&quot;container&quot;&gt;
+                                
+            &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                            
+        &lt;/div&gt;
+            
+    &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-55" class="collapse collapsable-details">
+        <pre>13:09:55.873 status code was: 401, expected: 200, response time: 948, url: https://designer.api.spec.lovethat.design/api/designer/v1.0/projects/filter?page_no=1&amp;page_size=5&amp;sort_by=&amp;country_code=&amp;city=&amp;states=&amp;zip_codes=&amp;user_code=&amp;start_date=&amp;stage_code=&amp;search=&amp;customer=&amp;contact=&amp;estimated_value=&amp;estimated_hours=&amp;activity_hours=&amp;tag=&amp;groups=&amp;project_types=&amp;project_code=&amp;isFilterEnabled=true&amp;flag_codes=, response: &lt;html&gt;
+        
+    &lt;head&gt;
+        &lt;META http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;
+                
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                
+        &lt;meta content=&quot;noindex,nofollow&quot; name=&quot;robots&quot;&gt;
+                
+        &lt;style&gt;                body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif; margin: 0; }
+                .container { margin: 30px; max-width: 600px; }
+                h1 { color: #dc3545; font-size: 24px; }&lt;/style&gt;
+            
+    &lt;/head&gt;
+        
+    &lt;body&gt;
+                                
+        &lt;div class=&quot;container&quot;&gt;
+                                
+            &lt;h1&gt;Whoops, looks like something went wrong.&lt;/h1&gt;
+                            
+        &lt;/div&gt;
+            
+    &lt;/body&gt;
+    
+&lt;/html&gt;</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

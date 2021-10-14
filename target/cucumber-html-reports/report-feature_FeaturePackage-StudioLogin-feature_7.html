@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: FeaturePackage/StudioLogin.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>19 Sep 2021, 19:01</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">FeaturePackage/StudioLogin.feature</td>
+                    <td      class="passed"    >6</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">6</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="969056400">969ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">FeaturePackage/StudioLogin.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Get access token for Studio Login</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://auth.api.spec.lovethat.design/api/login'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:01:14.321 Environment variable is null 
+19:01:14.322 karate.env = null 
+19:01:14.322 config.baseUrl = https://designer.api.spec.lovethat.design 
+19:01:14.322 config.token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">968ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get Bearer Token</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request {&quot;username&quot;:&quot;likhitha@28lightbulbs.com&quot;,&quot;password&quot;:&quot;Jar-Merc-binks&quot;,&quot;account_code&quot;:&quot;test-designer&quot;,&quot;application_module&quot;:&quot;web-ui-designer&quot;,&quot;batch_id&quot;:&quot;c470e5073664d34a363bf993212b7fa24efd&quot;,&quot;token_b&quot;:null}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">967ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:01:14.325 request:
+1 &gt; POST https://auth.api.spec.lovethat.design/api/login
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 203
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: auth.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{&quot;username&quot;:&quot;likhitha@28lightbulbs.com&quot;,&quot;password&quot;:&quot;Jar-Merc-binks&quot;,&quot;account_code&quot;:&quot;test-designer&quot;,&quot;application_module&quot;:&quot;web-ui-designer&quot;,&quot;batch_id&quot;:&quot;c470e5073664d34a363bf993212b7fa24efd&quot;,&quot;token_b&quot;:null}
+
+19:01:15.290 response time in milliseconds: 962.97
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 15:01:15 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-RateLimit-Limit: 60
+1 &lt; X-RateLimit-Remaining: 45
+{&quot;data&quot;:{&quot;user&quot;:{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;profile_image_id&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;tel_no&quot;:&quot;+97144347585&quot;,&quot;website&quot;:&quot;www.stickmantribe.com&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;,&quot;company_logo_id&quot;:&quot;7075f3200f73904f050bc870ed9fc526e8aa.png&quot;,&quot;fax_no&quot;:&quot;+97144347585&quot;,&quot;security_groups&quot;:[&quot;admin&quot;],&quot;token_b&quot;:null,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NzUsImV4cCI6MTYzMjIzNjQ3NSwibmJmIjoxNjMyMDYzNjc1LCJqdGkiOiJmdDJmVTFUck90aTQ0dmhIIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SW04eGFTdERkRWwyV1VWalJqTmxTemwzWW0wM09IYzlQU0lzSW5aaGJIVmxJam9pTlRJd2EyOURjbXhrT0hOUlVVSlhObG81WjJWSlhDOTVWamxaYkdrMmVGd3ZYQzlTVUVzeU1qbDZabkJtTkhacUt6bDJLekJ2V2s5Y0wzWTBXa3haUkZKNGNWb2lMQ0p0WVdNaU9pSXhOak14WW1NMk1UQTFZVGt4Wm1SaFltTTJaV1ZoT0dZeVl6STVOVFkwTkdKbFkyVTBabUZrTWpObU56bGtZV013WkdJd05tWm1NalZsTVRreFpqRmlJbjA9IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrTklVV2xHTnpoeE5UZHZlVXhtTkUxT1Zub3pSbEU5UFNJc0luWmhiSFZsSWpvaU5uY3JZWEJ0VEV0TmMwdHpOV3M0VkhkMFREZFdVMGRTUlVabk5HMXNhMnBUVFRKaFJuaGhSMmd6TkQwaUxDSnRZV01pT2lJeE4ySTBNREUyTnpBNE16ZGhOV0V4T0dWaU1ERmpaV0U1TURZeU5UUm1NVEZsWVRVeE5HTTNaR000TVRZNFpqWTNOVFpsTnpKallqQmpNbUU0WVRBMkluMD0ifQ.5oziGwxM6raUdrYz_zck2b9H6jPoi8K4EFrVnCZ9NQY&quot;},&quot;company&quot;:{&quot;code&quot;:&quot;test-designer&quot;,&quot;logo_image_id&quot;:&quot;7075f3200f73904f050bc870ed9fc526e8aa.png&quot;,&quot;name&quot;:&quot;Stickman&quot;},&quot;config&quot;:[{&quot;type&quot;:&quot;api_url&quot;,&quot;resource&quot;:&quot;Product_API_URL&quot;,&quot;URL&quot;:&quot;https:\/\/product.api.spec.lovethat.design\/api&quot;},{&quot;type&quot;:&quot;api_url&quot;,&quot;resource&quot;:&quot;Designer_API_URL&quot;,&quot;URL&quot;:&quot;https:\/\/designer.api.spec.lovethat.design\/api\/designer\/v1.0&quot;},{&quot;type&quot;:&quot;api_url&quot;,&quot;resource&quot;:&quot;Application_API_URL&quot;,&quot;URL&quot;:&quot;https:\/\/application.api.spec.lovethat.design\/api&quot;},{&quot;type&quot;:&quot;api_url&quot;,&quot;resource&quot;:&quot;Storage_Image_API_URL&quot;,&quot;URL&quot;:&quot;https:\/\/images.api.spec.lovethat.design\/test-designer&quot;},{&quot;type&quot;:&quot;api_url&quot;,&quot;resource&quot;:&quot;Storage_Document_API_URL&quot;,&quot;URL&quot;:&quot;https:\/\/documents.api.spec.lovethat.design\/test-designer&quot;,&quot;KEY&quot;:&quot;AIzaSyBSDD4QjLRes_76orGSZ0Fh5pIbGO2AGiQ,AIzaSyDKjOLlqQh2nEPos1DMRSBMmMVplpN_Ovs,AIzaSyD1EsbkreHqQkWIRs8jCIFvWwWWuYr3PrM,AIzaSyBoCYDopPS2fAJfEf3oSr8CubvM8wgbXmE,AIzaSyAoLxmAJvmmd8uVlCnhNUFojWYXD_yhHQA,AIzaSyBxPSfIK3PM_f9OA9b9UgzZhb3Cf17xR4c&quot;},{&quot;type&quot;:&quot;api_url&quot;,&quot;resource&quot;:&quot;Storage_Image_Upload_URL&quot;,&quot;URL&quot;:&quot;https:\/\/image-upload.api.spec.lovethat.design\/uploads\/&quot;},{&quot;type&quot;:&quot;api_url&quot;,&quot;resource&quot;:&quot;Storage_Document_Upload_URL&quot;,&quot;URL&quot;:&quot;https:\/\/document-upload.api.spec.lovethat.design\/uploads\/&quot;},{&quot;type&quot;:&quot;google_custom_search&quot;,&quot;resource&quot;:&quot;Google_Custom_Search_CX_KEY&quot;,&quot;KEY&quot;:&quot;011561987199445998854%3Awxtthpv7hfc&quot;},{&quot;type&quot;:&quot;google_custom_search&quot;,&quot;resource&quot;:&quot;Google_Custom_Search_API_KEY&quot;,&quot;KEY&quot;:&quot;AIzaSyBSDD4QjLRes_76orGSZ0Fh5pIbGO2AGiQ,AIzaSyDKjOLlqQh2nEPos1DMRSBMmMVplpN_Ovs,AIzaSyD1EsbkreHqQkWIRs8jCIFvWwWWuYr3PrM,AIzaSyBoCYDopPS2fAJfEf3oSr8CubvM8wgbXmE,AIzaSyAoLxmAJvmmd8uVlCnhNUFojWYXD_yhHQA,AIzaSyBxPSfIK3PM_f9OA9b9UgzZhb3Cf17xR4c&quot;},{&quot;type&quot;:&quot;pusher&quot;,&quot;resource&quot;:&quot;Pusher_API_KEY&quot;,&quot;KEY&quot;:&quot;f26a9d9ba9b7066b9def&quot;},{&quot;type&quot;:&quot;pusher&quot;,&quot;resource&quot;:&quot;Pusher_CLUSTER&quot;,&quot;KEY&quot;:&quot;mt1&quot;},{&quot;type&quot;:&quot;google_custom_search&quot;,&quot;resource&quot;:&quot;Google_Custom_Search_CX_KEY&quot;,&quot;KEY&quot;:&quot;011561987199445998854%3Awxtthpv7hfc&quot;},{&quot;type&quot;:&quot;google_custom_search&quot;,&quot;resource&quot;:&quot;Google_Custom_Search_API_KEY&quot;,&quot;KEY&quot;:&quot;AIzaSyBSDD4QjLRes_76orGSZ0Fh5pIbGO2AGiQ,AIzaSyDKjOLlqQh2nEPos1DMRSBMmMVplpN_Ovs,AIzaSyD1EsbkreHqQkWIRs8jCIFvWwWWuYr3PrM,AIzaSyBoCYDopPS2fAJfEf3oSr8CubvM8wgbXmE,AIzaSyAoLxmAJvmmd8uVlCnhNUFojWYXD_yhHQA,AIzaSyBxPSfIK3PM_f9OA9b9UgzZhb3Cf17xR4c&quot;},{&quot;type&quot;:&quot;pusher&quot;,&quot;resource&quot;:&quot;Pusher_API_KEY&quot;,&quot;KEY&quot;:&quot;f26a9d9ba9b7066b9def&quot;},{&quot;type&quot;:&quot;pusher&quot;,&quot;resource&quot;:&quot;Pusher_CLUSTER&quot;,&quot;KEY&quot;:&quot;mt1&quot;}]}}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def access_token = response.data.user.token</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print access_token</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>19:01:15.294 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNjM2NzUsImV4cCI6MTYzMjIzNjQ3NSwibmJmIjoxNjMyMDYzNjc1LCJqdGkiOiJmdDJmVTFUck90aTQ0dmhIIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SW04eGFTdERkRWwyV1VWalJqTmxTemwzWW0wM09IYzlQU0lzSW5aaGJIVmxJam9pTlRJd2EyOURjbXhrT0hOUlVVSlhObG81WjJWSlhDOTVWamxaYkdrMmVGd3ZYQzlTVUVzeU1qbDZabkJtTkhacUt6bDJLekJ2V2s5Y0wzWTBXa3haUkZKNGNWb2lMQ0p0WVdNaU9pSXhOak14WW1NMk1UQTFZVGt4Wm1SaFltTTJaV1ZoT0dZeVl6STVOVFkwTkdKbFkyVTBabUZrTWpObU56bGtZV013WkdJd05tWm1NalZsTVRreFpqRmlJbjA9IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrTklVV2xHTnpoeE5UZHZlVXhtTkUxT1Zub3pSbEU5UFNJc0luWmhiSFZsSWpvaU5uY3JZWEJ0VEV0TmMwdHpOV3M0VkhkMFREZFdVMGRTUlVabk5HMXNhMnBUVFRKaFJuaGhSMmd6TkQwaUxDSnRZV01pT2lJeE4ySTBNREUyTnpBNE16ZGhOV0V4T0dWaU1ERmpaV0U1TURZeU5UUm1NVEZsWVRVeE5HTTNaR000TVRZNFpqWTNOVFpsTnpKallqQmpNbUU0WVRBMkluMD0ifQ.5oziGwxM6raUdrYz_zck2b9H6jPoi8K4EFrVnCZ9NQY</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: FeaturePackage/Check_addressbook.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>19 Sep 2021, 19:01</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">FeaturePackage/Check_addressbook.feature</td>
+                    <td      class="passed"    >7</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="3045745200">3s 045ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">FeaturePackage/Check_addressbook.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Check config file is working</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">008ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:31:15.335 Environment variable is null 
+13:31:15.338 karate.env = null 
+13:31:15.339 config.baseUrl = https://designer.api.spec.lovethat.design 
+13:31:15.340 config.token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">header Authorization = 'Bearer '+token</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print token</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>13:31:15.476 [print] eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">3s 037ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check config file</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/designer/v1.0/company/users'</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">3s 016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>13:31:16.041 request:
+1 &gt; GET https://designer.api.spec.lovethat.design/api/designer/v1.0/company/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: designer.api.spec.lovethat.design
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+
+13:31:18.495 response time in milliseconds: 2441.01
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 19 Sep 2021 09:31:19 GMT
+1 &lt; Server: nginx/1.14.0 (Ubuntu)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+{&quot;data&quot;:[{&quot;code&quot;:&quot;helpdesk2&quot;,&quot;first_name&quot;:&quot;HelpDesk2&quot;,&quot;last_name&quot;:&quot;&quot;,&quot;user_name&quot;:&quot;support@28lightbulbs.com&quot;,&quot;email&quot;:&quot;support@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;ER527&quot;,&quot;first_name&quot;:&quot;Robert&quot;,&quot;last_name&quot;:&quot;Richmond&quot;,&quot;user_name&quot;:&quot;robert@28lightbulbs.test&quot;,&quot;email&quot;:&quot;robert@28lightbulbs.test&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;85533229&quot;,&quot;telephone_no&quot;:&quot;8098789&quot;,&quot;profile_image&quot;:&quot;e7b494e8bf41db4d4eb85a3b6b6935b36143.png&quot;,&quot;avatar_code&quot;:&quot;RR:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Senior Designer&quot;,&quot;code&quot;:&quot;senior-designer-1&quot;},&quot;actual_cost&quot;:&quot;1099.00&quot;},{&quot;code&quot;:&quot;W8HPSB&quot;,&quot;first_name&quot;:&quot;James R&quot;,&quot;last_name&quot;:&quot;Hawker N&quot;,&quot;user_name&quot;:&quot;james@28lightbulbs.test&quot;,&quot;email&quot;:&quot;james@28lightbulbs.test&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;+68454&quot;,&quot;profile_image&quot;:&quot;ec6c9f4602c0c04c0e09c6a07663ff7d9faa.jpg&quot;,&quot;avatar_code&quot;:&quot;JH:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Designer&quot;,&quot;code&quot;:&quot;designer-3&quot;}},{&quot;code&quot;:&quot;SK842R&quot;,&quot;first_name&quot;:&quot;Jane&quot;,&quot;last_name&quot;:&quot;Richmond&quot;,&quot;user_name&quot;:&quot;jane@28lightbulbs.test&quot;,&quot;email&quot;:&quot;jane@28lightbulbs.test&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;8553322&quot;,&quot;telephone_no&quot;:&quot;809878&quot;,&quot;profile_image&quot;:&quot;6c576d894eb57444574af2841f7777288c02.jpg&quot;,&quot;avatar_code&quot;:&quot;JR:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;sales-person&quot;,&quot;name&quot;:&quot;Sales Person&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;6716e6cd1b406142b619cf9197a6aa1e5ac6&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Developer&quot;,&quot;code&quot;:&quot;developer&quot;}},{&quot;code&quot;:&quot;QMO8KU&quot;,&quot;first_name&quot;:&quot;Sarah&quot;,&quot;last_name&quot;:&quot;Concepcion&quot;,&quot;user_name&quot;:&quot;sarah@28lightbulbs.test&quot;,&quot;email&quot;:&quot;sarah@28lightbulbs.test&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;1&quot;,&quot;telephone_no&quot;:&quot;1&quot;,&quot;profile_image&quot;:&quot;fe684be9d8316d4c03d86bed135413250bc8_61bbd2a6cdea7c40dbc9139ce107342aff79_Sarah.jpg&quot;,&quot;avatar_code&quot;:&quot;SC:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Designer&quot;,&quot;code&quot;:&quot;designer-3&quot;},&quot;actual_cost&quot;:&quot;95.00&quot;},{&quot;code&quot;:&quot;IMNT6P&quot;,&quot;first_name&quot;:&quot;Remya&quot;,&quot;user_name&quot;:&quot;remya@28lightbulbs.com&quot;,&quot;email&quot;:&quot;remya@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;profile_image&quot;:&quot;ec7f4477ebaf1e447ee9c80ec100a3fbc9d1.png&quot;,&quot;avatar_code&quot;:&quot;R:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;test-role&quot;,&quot;name&quot;:&quot;Test Role&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Director&quot;,&quot;code&quot;:&quot;director&quot;}},{&quot;code&quot;:&quot;GJI977&quot;,&quot;first_name&quot;:&quot;Shahlin&quot;,&quot;user_name&quot;:&quot;shahlin@28lightbulbs.com&quot;,&quot;email&quot;:&quot;shahlin@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;avatar_code&quot;:&quot;S:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;intern&quot;,&quot;name&quot;:&quot;Intern&quot;,&quot;description&quot;:&quot;Intern&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9dcaf-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Director&quot;,&quot;code&quot;:&quot;director&quot;},&quot;actual_cost&quot;:&quot;34.00&quot;},{&quot;code&quot;:&quot;BBZJIM&quot;,&quot;first_name&quot;:&quot;Mohamed&quot;,&quot;last_name&quot;:&quot;Riyas1&quot;,&quot;user_name&quot;:&quot;mohamed@28lightbulbs.com&quot;,&quot;email&quot;:&quot;mohamed@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;1234567899&quot;,&quot;telephone_no&quot;:&quot;1234567899&quot;,&quot;profile_image&quot;:&quot;4ce3bc75c46b0c4719c9228c5b39f29daec3.jpeg&quot;,&quot;avatar_code&quot;:&quot;MR:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;test-role&quot;,&quot;name&quot;:&quot;Test Role&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Project Leader&quot;,&quot;code&quot;:&quot;project-leader-2&quot;},&quot;actual_cost&quot;:&quot;1.00&quot;},{&quot;code&quot;:&quot;TC9E18&quot;,&quot;first_name&quot;:&quot;Noufal&quot;,&quot;last_name&quot;:&quot;Md&quot;,&quot;user_name&quot;:&quot;noufal@28lightbulbs.com&quot;,&quot;email&quot;:&quot;noufal@28lightbulbs.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;NM:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;designer&quot;,&quot;name&quot;:&quot;Designer&quot;,&quot;description&quot;:&quot;Designer&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9db33-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Project Leader&quot;,&quot;code&quot;:&quot;project-leader-2&quot;},&quot;actual_cost&quot;:&quot;150.00&quot;},{&quot;code&quot;:&quot;NAHGA5&quot;,&quot;first_name&quot;:&quot;Ian Sarmiento&quot;,&quot;user_name&quot;:&quot;ian@lovethatdesign.com&quot;,&quot;email&quot;:&quot;ian@lovethatdesign.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;0524163777&quot;,&quot;profile_image&quot;:&quot;a567033ca13fca491aa9534aba676b296a48.jpg&quot;,&quot;avatar_code&quot;:&quot;I:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Designer&quot;,&quot;code&quot;:&quot;designer-3&quot;}},{&quot;code&quot;:&quot;INCRNQ&quot;,&quot;first_name&quot;:&quot;Personal Mohamed&quot;,&quot;last_name&quot;:&quot;gmail&quot;,&quot;user_name&quot;:&quot;getonriyas@gmail.com&quot;,&quot;email&quot;:&quot;getonriyas@gmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;0524242211&quot;,&quot;telephone_no&quot;:&quot;0524242211&quot;,&quot;profile_image&quot;:&quot;20f159204fe544452c480fb420d690f95b86.png&quot;,&quot;avatar_code&quot;:&quot;PG:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Designer&quot;,&quot;code&quot;:&quot;designer-3&quot;},&quot;actual_cost&quot;:&quot;13.00&quot;},{&quot;code&quot;:&quot;LEZYI7&quot;,&quot;first_name&quot;:&quot;Mohaimeen&quot;,&quot;last_name&quot;:&quot;Zahir&quot;,&quot;user_name&quot;:&quot;mohaimeen@28lightbulbs.com&quot;,&quot;email&quot;:&quot;mohaimeen@28lightbulbs.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;profile_image&quot;:&quot;b019a16875f567492e7826f7a84111d6329e.png&quot;,&quot;avatar_code&quot;:&quot;MZ:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;test-role&quot;,&quot;name&quot;:&quot;Test Role&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Director&quot;,&quot;code&quot;:&quot;director&quot;},&quot;actual_cost&quot;:&quot;2.00&quot;},{&quot;code&quot;:&quot;IIG7F5&quot;,&quot;first_name&quot;:&quot;Likhitha&quot;,&quot;last_name&quot;:&quot;AC&quot;,&quot;user_name&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;email&quot;:&quot;Likhitha@28lightbulbs.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;989898&quot;,&quot;telephone_no&quot;:&quot;955354356&quot;,&quot;profile_image&quot;:&quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,&quot;avatar_code&quot;:&quot;LA:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Developer&quot;,&quot;code&quot;:&quot;developer&quot;},&quot;actual_cost&quot;:&quot;80.00&quot;},{&quot;code&quot;:&quot;UQ48B3&quot;,&quot;first_name&quot;:&quot;Mohamed wsx&quot;,&quot;user_name&quot;:&quot;wsxwsxwsx@yopmail.com&quot;,&quot;email&quot;:&quot;wsxwsxwsx@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;M:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Manager&quot;,&quot;code&quot;:&quot;manager&quot;},&quot;actual_cost&quot;:&quot;560.00&quot;},{&quot;code&quot;:&quot;DWGB11&quot;,&quot;first_name&quot;:&quot;test_lovethatdesign&quot;,&quot;user_name&quot;:&quot;test_lovethatdesign2@yopmail.com&quot;,&quot;email&quot;:&quot;test_lovethatdesign2@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:1,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;profile_image&quot;:&quot;987aeb54478c644efc481394f052dbb81912.jpg&quot;,&quot;avatar_code&quot;:&quot;T:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Contract employee&quot;,&quot;code&quot;:&quot;contract-employee&quot;}},{&quot;code&quot;:&quot;V92ANT&quot;,&quot;first_name&quot;:&quot;2.58.P1&quot;,&quot;user_name&quot;:&quot;2.58.P1@yopmail.com&quot;,&quot;email&quot;:&quot;2.58.P1@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:1,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;2:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;RBBBFZ&quot;,&quot;first_name&quot;:&quot;USER 258J&quot;,&quot;last_name&quot;:&quot;789&quot;,&quot;user_name&quot;:&quot;user_2.58j@yopmail.com&quot;,&quot;email&quot;:&quot;user_2.58j@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;456&quot;,&quot;telephone_no&quot;:&quot;123&quot;,&quot;avatar_code&quot;:&quot;U7:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;test-role&quot;,&quot;name&quot;:&quot;Test Role&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Architect_1&quot;,&quot;code&quot;:&quot;architect&quot;},&quot;actual_cost&quot;:&quot;42.00&quot;},{&quot;code&quot;:&quot;KSV0GR&quot;,&quot;first_name&quot;:&quot;user-1a&quot;,&quot;user_name&quot;:&quot;user-1a@yopmail.com&quot;,&quot;email&quot;:&quot;user-1a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Res Type-1&quot;,&quot;code&quot;:&quot;res-type-1&quot;},&quot;actual_cost&quot;:&quot;49.00&quot;},{&quot;code&quot;:&quot;QHN14Y&quot;,&quot;first_name&quot;:&quot;user-2a-1a&quot;,&quot;user_name&quot;:&quot;user-2a@yopmail.com&quot;,&quot;email&quot;:&quot;user-2a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:1,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Res Type-2&quot;,&quot;code&quot;:&quot;res-type-2&quot;},&quot;actual_cost&quot;:&quot;59.00&quot;},{&quot;code&quot;:&quot;MDY7HT&quot;,&quot;first_name&quot;:&quot;Ajo Joseph&quot;,&quot;user_name&quot;:&quot;ajo@lovethatdesign.com&quot;,&quot;email&quot;:&quot;ajo@lovethatdesign.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;A:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Res Type-3&quot;,&quot;code&quot;:&quot;res-type-3&quot;},&quot;actual_cost&quot;:&quot;2.00&quot;},{&quot;code&quot;:&quot;WIRRJJ&quot;,&quot;first_name&quot;:&quot;user-3a&quot;,&quot;user_name&quot;:&quot;user-3a@yopmail.com&quot;,&quot;email&quot;:&quot;user-3a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;actual_cost&quot;:&quot;50.00&quot;},{&quot;code&quot;:&quot;NGWY5G&quot;,&quot;first_name&quot;:&quot;user-7a&quot;,&quot;user_name&quot;:&quot;user-7a@yopmail.com&quot;,&quot;email&quot;:&quot;user-7a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;7658&quot;,&quot;telephone_no&quot;:&quot;675&quot;,&quot;profile_image&quot;:&quot;5198a6fd2c01e24fe6280be2e05407163ca4.png&quot;,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;CVA04J&quot;,&quot;first_name&quot;:&quot;user-8a&quot;,&quot;user_name&quot;:&quot;user-8a@yopmail.com&quot;,&quot;email&quot;:&quot;user-8a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;Senior director&quot;,&quot;code&quot;:&quot;senior-director&quot;},&quot;actual_cost&quot;:&quot;26.00&quot;},{&quot;code&quot;:&quot;H71L63&quot;,&quot;first_name&quot;:&quot;user-9a&quot;,&quot;user_name&quot;:&quot;user-9a@yopmail.com&quot;,&quot;email&quot;:&quot;user-9a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;profile_image&quot;:&quot;d4c453efaf6c3a4c78a8efeaaca168283054.png&quot;,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;Y9C6GF&quot;,&quot;first_name&quot;:&quot;user-12a&quot;,&quot;user_name&quot;:&quot;user-12a@yopmail.com&quot;,&quot;email&quot;:&quot;user-12a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;JDU1SR&quot;,&quot;first_name&quot;:&quot;user-13a&quot;,&quot;user_name&quot;:&quot;user-13a@yopmail.com&quot;,&quot;email&quot;:&quot;user-13a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:1,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;BMRYP5&quot;,&quot;first_name&quot;:&quot;User test&quot;,&quot;user_name&quot;:&quot;user-studio-test@yopmail.com&quot;,&quot;email&quot;:&quot;user-studio-test@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;L2JICS&quot;,&quot;first_name&quot;:&quot;user-14a .Studio&quot;,&quot;user_name&quot;:&quot;user-14a@yopmail.com&quot;,&quot;email&quot;:&quot;user-14a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:1,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;EUV2OR&quot;,&quot;first_name&quot;:&quot;user-17a&quot;,&quot;user_name&quot;:&quot;user-17a@yopmail.com&quot;,&quot;email&quot;:&quot;user-17a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;profile_image&quot;:&quot;455deb3b3f44d3437a3949b318b35ec32c12.jpg&quot;,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;T1VGOZ&quot;,&quot;first_name&quot;:&quot;user-18a&quot;,&quot;user_name&quot;:&quot;user-18a@yopmail.com&quot;,&quot;email&quot;:&quot;user-18a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;BAW9GM&quot;,&quot;first_name&quot;:&quot;user-19a&quot;,&quot;user_name&quot;:&quot;user-19a@yopmail.com&quot;,&quot;email&quot;:&quot;user-19a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;KCEYQE&quot;,&quot;first_name&quot;:&quot;user-20a&quot;,&quot;user_name&quot;:&quot;user-20a@yopmail.com&quot;,&quot;email&quot;:&quot;user-20a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:1,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;HYP68S&quot;,&quot;first_name&quot;:&quot;user-21&quot;,&quot;user_name&quot;:&quot;user-21@yopmail.com&quot;,&quot;email&quot;:&quot;user-21@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;P6YDFL&quot;,&quot;first_name&quot;:&quot;user-22a&quot;,&quot;user_name&quot;:&quot;user-22a@yopmail.com&quot;,&quot;email&quot;:&quot;user-22a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;just-for-activity&quot;,&quot;name&quot;:&quot;Just for Activity&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;07b8b8b20bc0e046550839a0a757aaa7837d&quot;}]},{&quot;code&quot;:&quot;YVZ5TP&quot;,&quot;first_name&quot;:&quot;user-23a&quot;,&quot;user_name&quot;:&quot;user-23a@yopmail.com&quot;,&quot;email&quot;:&quot;user-23a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;N52GIJ&quot;,&quot;first_name&quot;:&quot;user-24a@yopmail.com&quot;,&quot;user_name&quot;:&quot;user-24a@yopmail.com&quot;,&quot;email&quot;:&quot;user-24a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;20200422094244554role1&quot;,&quot;name&quot;:&quot;20200422094244554Role1&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;0e62df2b475d044e52481d9416d8768f18c2&quot;}]},{&quot;code&quot;:&quot;KHVPO9&quot;,&quot;first_name&quot;:&quot;User-26a&quot;,&quot;user_name&quot;:&quot;user-26a@yopmail.com&quot;,&quot;email&quot;:&quot;user-26a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;designer&quot;,&quot;name&quot;:&quot;Designer&quot;,&quot;description&quot;:&quot;Designer&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9db33-19d2-11ea-b552-024d8e09c238&quot;}],&quot;resource_type&quot;:{&quot;name&quot;:&quot;1ST Resource's Test&quot;,&quot;code&quot;:&quot;1111-resource&quot;}},{&quot;code&quot;:&quot;F9793N&quot;,&quot;first_name&quot;:&quot;user-27ab&quot;,&quot;last_name&quot;:&quot;m&quot;,&quot;user_name&quot;:&quot;user-27a@yopmail.com&quot;,&quot;email&quot;:&quot;user-27a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;0524242211&quot;,&quot;telephone_no&quot;:&quot;0524242211&quot;,&quot;avatar_code&quot;:&quot;UM:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;WATG7L&quot;,&quot;first_name&quot;:&quot;user-28a&quot;,&quot;last_name&quot;:&quot;hi&quot;,&quot;user_name&quot;:&quot;user-28a@yopmail.com&quot;,&quot;email&quot;:&quot;user-28a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:1,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;0524242211&quot;,&quot;telephone_no&quot;:&quot;0524242211&quot;,&quot;avatar_code&quot;:&quot;UH:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;K2P7BZ&quot;,&quot;first_name&quot;:&quot;user-29a&quot;,&quot;user_name&quot;:&quot;user-29a@yopmail.com&quot;,&quot;email&quot;:&quot;user-29a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;contact_no&quot;:&quot;0524242211&quot;,&quot;telephone_no&quot;:&quot;0524242211&quot;,&quot;profile_image&quot;:&quot;d103daee147e31455b181e11d30714df237d.png&quot;,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;QO9RJP&quot;,&quot;first_name&quot;:&quot;user-31a&quot;,&quot;user_name&quot;:&quot;user-31a@yopmail.com&quot;,&quot;email&quot;:&quot;user-31a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;WFYGKV&quot;,&quot;first_name&quot;:&quot;user-32a&quot;,&quot;user_name&quot;:&quot;user-32a@yopmail.com&quot;,&quot;email&quot;:&quot;user-32a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;BBQP68&quot;,&quot;first_name&quot;:&quot;user-33a&quot;,&quot;user_name&quot;:&quot;user-33a@yopmail.com&quot;,&quot;email&quot;:&quot;user-33a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;design-director&quot;,&quot;name&quot;:&quot;Design Director&quot;,&quot;description&quot;:&quot;Design Director&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;designer&quot;,&quot;name&quot;:&quot;Designer&quot;,&quot;description&quot;:&quot;Designer&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9db33-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;UF7E3H&quot;,&quot;first_name&quot;:&quot;user-34a&quot;,&quot;user_name&quot;:&quot;user-34a@yopmail.com&quot;,&quot;email&quot;:&quot;user-34a@yopmail.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;20200422114041965role1&quot;,&quot;name&quot;:&quot;20200422114041965Role1&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;59d5f9fce5af1e4711e8dd8e5e7cc6650b25&quot;}]},{&quot;code&quot;:&quot;XTNDJN&quot;,&quot;first_name&quot;:&quot;user-35a@yopmail.com&quot;,&quot;user_name&quot;:&quot;user-35a@yopmail.com&quot;,&quot;email&quot;:&quot;user-35a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;ZXQ0E4&quot;,&quot;first_name&quot;:&quot;user-36a&quot;,&quot;user_name&quot;:&quot;user-36a@yopmail.com&quot;,&quot;email&quot;:&quot;user-36a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;YFS52R&quot;,&quot;first_name&quot;:&quot;user-37a&quot;,&quot;user_name&quot;:&quot;user-37a@yopmail.com&quot;,&quot;email&quot;:&quot;user-37a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;},{&quot;code&quot;:&quot;20200422094244554role1&quot;,&quot;name&quot;:&quot;20200422094244554Role1&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;0e62df2b475d044e52481d9416d8768f18c2&quot;}]},{&quot;code&quot;:&quot;WPPE4F&quot;,&quot;first_name&quot;:&quot;Dummy&quot;,&quot;user_name&quot;:&quot;piyilef637@alltekia.com&quot;,&quot;email&quot;:&quot;piyilef637@alltekia.com&quot;,&quot;is_disabled&quot;:1,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;D:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;Y6AD6K&quot;,&quot;first_name&quot;:&quot;user-38a&quot;,&quot;user_name&quot;:&quot;user-38a@yopmail.com&quot;,&quot;email&quot;:&quot;user-38a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;N70P1U&quot;,&quot;first_name&quot;:&quot;user-39a&quot;,&quot;user_name&quot;:&quot;user-39a@yopmail.com&quot;,&quot;email&quot;:&quot;user-39a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;V4FQ4B&quot;,&quot;first_name&quot;:&quot;user-40a&quot;,&quot;user_name&quot;:&quot;user-40a@yopmail.com&quot;,&quot;email&quot;:&quot;user-40a@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;admin&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;description&quot;:&quot;Admin&quot;,&quot;module_id&quot;:5,&quot;batch_id&quot;:&quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;}]},{&quot;code&quot;:&quot;J86WUO&quot;,&quot;first_name&quot;:&quot;user-41a&quot;,&quot;user_name&quot;:&quot;user-41@yopmail.com&quot;,&quot;email&quot;:&quot;user-41@yopmail.com&quot;,&quot;is_disabled&quot;:0,&quot;is_blocked&quot;:0,&quot;is_registered&quot;:1,&quot;is_guest&quot;:0,&quot;avatar_code&quot;:&quot;U:1&quot;,&quot;security&quot;:[{&quot;code&quot;:&quot;test-role&quot;,&quot;name&quot;:&quot;Test Role&quot;,&quot;module_id&quot;:0,&quot;batch_id&quot;:&quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>13:31:18.516 [print] {
+  &quot;data&quot;: [
+    {
+      &quot;code&quot;: &quot;helpdesk2&quot;,
+      &quot;first_name&quot;: &quot;HelpDesk2&quot;,
+      &quot;last_name&quot;: &quot;&quot;,
+      &quot;user_name&quot;: &quot;support@28lightbulbs.com&quot;,
+      &quot;email&quot;: &quot;support@28lightbulbs.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;ER527&quot;,
+      &quot;first_name&quot;: &quot;Robert&quot;,
+      &quot;last_name&quot;: &quot;Richmond&quot;,
+      &quot;user_name&quot;: &quot;robert@28lightbulbs.test&quot;,
+      &quot;email&quot;: &quot;robert@28lightbulbs.test&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;85533229&quot;,
+      &quot;telephone_no&quot;: &quot;8098789&quot;,
+      &quot;profile_image&quot;: &quot;e7b494e8bf41db4d4eb85a3b6b6935b36143.png&quot;,
+      &quot;avatar_code&quot;: &quot;RR:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Senior Designer&quot;,
+        &quot;code&quot;: &quot;senior-designer-1&quot;
+      },
+      &quot;actual_cost&quot;: &quot;1099.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;W8HPSB&quot;,
+      &quot;first_name&quot;: &quot;James R&quot;,
+      &quot;last_name&quot;: &quot;Hawker N&quot;,
+      &quot;user_name&quot;: &quot;james@28lightbulbs.test&quot;,
+      &quot;email&quot;: &quot;james@28lightbulbs.test&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;+68454&quot;,
+      &quot;profile_image&quot;: &quot;ec6c9f4602c0c04c0e09c6a07663ff7d9faa.jpg&quot;,
+      &quot;avatar_code&quot;: &quot;JH:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Designer&quot;,
+        &quot;code&quot;: &quot;designer-3&quot;
+      }
+    },
+    {
+      &quot;code&quot;: &quot;SK842R&quot;,
+      &quot;first_name&quot;: &quot;Jane&quot;,
+      &quot;last_name&quot;: &quot;Richmond&quot;,
+      &quot;user_name&quot;: &quot;jane@28lightbulbs.test&quot;,
+      &quot;email&quot;: &quot;jane@28lightbulbs.test&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;8553322&quot;,
+      &quot;telephone_no&quot;: &quot;809878&quot;,
+      &quot;profile_image&quot;: &quot;6c576d894eb57444574af2841f7777288c02.jpg&quot;,
+      &quot;avatar_code&quot;: &quot;JR:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;sales-person&quot;,
+          &quot;name&quot;: &quot;Sales Person&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;6716e6cd1b406142b619cf9197a6aa1e5ac6&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Developer&quot;,
+        &quot;code&quot;: &quot;developer&quot;
+      }
+    },
+    {
+      &quot;code&quot;: &quot;QMO8KU&quot;,
+      &quot;first_name&quot;: &quot;Sarah&quot;,
+      &quot;last_name&quot;: &quot;Concepcion&quot;,
+      &quot;user_name&quot;: &quot;sarah@28lightbulbs.test&quot;,
+      &quot;email&quot;: &quot;sarah@28lightbulbs.test&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;1&quot;,
+      &quot;telephone_no&quot;: &quot;1&quot;,
+      &quot;profile_image&quot;: &quot;fe684be9d8316d4c03d86bed135413250bc8_61bbd2a6cdea7c40dbc9139ce107342aff79_Sarah.jpg&quot;,
+      &quot;avatar_code&quot;: &quot;SC:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Designer&quot;,
+        &quot;code&quot;: &quot;designer-3&quot;
+      },
+      &quot;actual_cost&quot;: &quot;95.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;IMNT6P&quot;,
+      &quot;first_name&quot;: &quot;Remya&quot;,
+      &quot;user_name&quot;: &quot;remya@28lightbulbs.com&quot;,
+      &quot;email&quot;: &quot;remya@28lightbulbs.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;profile_image&quot;: &quot;ec7f4477ebaf1e447ee9c80ec100a3fbc9d1.png&quot;,
+      &quot;avatar_code&quot;: &quot;R:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;test-role&quot;,
+          &quot;name&quot;: &quot;Test Role&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Director&quot;,
+        &quot;code&quot;: &quot;director&quot;
+      }
+    },
+    {
+      &quot;code&quot;: &quot;GJI977&quot;,
+      &quot;first_name&quot;: &quot;Shahlin&quot;,
+      &quot;user_name&quot;: &quot;shahlin@28lightbulbs.com&quot;,
+      &quot;email&quot;: &quot;shahlin@28lightbulbs.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;989898&quot;,
+      &quot;telephone_no&quot;: &quot;955354356&quot;,
+      &quot;avatar_code&quot;: &quot;S:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;intern&quot;,
+          &quot;name&quot;: &quot;Intern&quot;,
+          &quot;description&quot;: &quot;Intern&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9dcaf-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Director&quot;,
+        &quot;code&quot;: &quot;director&quot;
+      },
+      &quot;actual_cost&quot;: &quot;34.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;BBZJIM&quot;,
+      &quot;first_name&quot;: &quot;Mohamed&quot;,
+      &quot;last_name&quot;: &quot;Riyas1&quot;,
+      &quot;user_name&quot;: &quot;mohamed@28lightbulbs.com&quot;,
+      &quot;email&quot;: &quot;mohamed@28lightbulbs.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;1234567899&quot;,
+      &quot;telephone_no&quot;: &quot;1234567899&quot;,
+      &quot;profile_image&quot;: &quot;4ce3bc75c46b0c4719c9228c5b39f29daec3.jpeg&quot;,
+      &quot;avatar_code&quot;: &quot;MR:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;test-role&quot;,
+          &quot;name&quot;: &quot;Test Role&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Project Leader&quot;,
+        &quot;code&quot;: &quot;project-leader-2&quot;
+      },
+      &quot;actual_cost&quot;: &quot;1.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;TC9E18&quot;,
+      &quot;first_name&quot;: &quot;Noufal&quot;,
+      &quot;last_name&quot;: &quot;Md&quot;,
+      &quot;user_name&quot;: &quot;noufal@28lightbulbs.com&quot;,
+      &quot;email&quot;: &quot;noufal@28lightbulbs.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;NM:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;designer&quot;,
+          &quot;name&quot;: &quot;Designer&quot;,
+          &quot;description&quot;: &quot;Designer&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9db33-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Project Leader&quot;,
+        &quot;code&quot;: &quot;project-leader-2&quot;
+      },
+      &quot;actual_cost&quot;: &quot;150.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;NAHGA5&quot;,
+      &quot;first_name&quot;: &quot;Ian Sarmiento&quot;,
+      &quot;user_name&quot;: &quot;ian@lovethatdesign.com&quot;,
+      &quot;email&quot;: &quot;ian@lovethatdesign.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;0524163777&quot;,
+      &quot;profile_image&quot;: &quot;a567033ca13fca491aa9534aba676b296a48.jpg&quot;,
+      &quot;avatar_code&quot;: &quot;I:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Designer&quot;,
+        &quot;code&quot;: &quot;designer-3&quot;
+      }
+    },
+    {
+      &quot;code&quot;: &quot;INCRNQ&quot;,
+      &quot;first_name&quot;: &quot;Personal Mohamed&quot;,
+      &quot;last_name&quot;: &quot;gmail&quot;,
+      &quot;user_name&quot;: &quot;getonriyas@gmail.com&quot;,
+      &quot;email&quot;: &quot;getonriyas@gmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;0524242211&quot;,
+      &quot;telephone_no&quot;: &quot;0524242211&quot;,
+      &quot;profile_image&quot;: &quot;20f159204fe544452c480fb420d690f95b86.png&quot;,
+      &quot;avatar_code&quot;: &quot;PG:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Designer&quot;,
+        &quot;code&quot;: &quot;designer-3&quot;
+      },
+      &quot;actual_cost&quot;: &quot;13.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;LEZYI7&quot;,
+      &quot;first_name&quot;: &quot;Mohaimeen&quot;,
+      &quot;last_name&quot;: &quot;Zahir&quot;,
+      &quot;user_name&quot;: &quot;mohaimeen@28lightbulbs.com&quot;,
+      &quot;email&quot;: &quot;mohaimeen@28lightbulbs.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;profile_image&quot;: &quot;b019a16875f567492e7826f7a84111d6329e.png&quot;,
+      &quot;avatar_code&quot;: &quot;MZ:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;test-role&quot;,
+          &quot;name&quot;: &quot;Test Role&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Director&quot;,
+        &quot;code&quot;: &quot;director&quot;
+      },
+      &quot;actual_cost&quot;: &quot;2.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;IIG7F5&quot;,
+      &quot;first_name&quot;: &quot;Likhitha&quot;,
+      &quot;last_name&quot;: &quot;AC&quot;,
+      &quot;user_name&quot;: &quot;Likhitha@28lightbulbs.com&quot;,
+      &quot;email&quot;: &quot;Likhitha@28lightbulbs.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;989898&quot;,
+      &quot;telephone_no&quot;: &quot;955354356&quot;,
+      &quot;profile_image&quot;: &quot;5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg&quot;,
+      &quot;avatar_code&quot;: &quot;LA:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Developer&quot;,
+        &quot;code&quot;: &quot;developer&quot;
+      },
+      &quot;actual_cost&quot;: &quot;80.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;UQ48B3&quot;,
+      &quot;first_name&quot;: &quot;Mohamed wsx&quot;,
+      &quot;user_name&quot;: &quot;wsxwsxwsx@yopmail.com&quot;,
+      &quot;email&quot;: &quot;wsxwsxwsx@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;M:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Manager&quot;,
+        &quot;code&quot;: &quot;manager&quot;
+      },
+      &quot;actual_cost&quot;: &quot;560.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;DWGB11&quot;,
+      &quot;first_name&quot;: &quot;test_lovethatdesign&quot;,
+      &quot;user_name&quot;: &quot;test_lovethatdesign2@yopmail.com&quot;,
+      &quot;email&quot;: &quot;test_lovethatdesign2@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 1,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;profile_image&quot;: &quot;987aeb54478c644efc481394f052dbb81912.jpg&quot;,
+      &quot;avatar_code&quot;: &quot;T:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Contract employee&quot;,
+        &quot;code&quot;: &quot;contract-employee&quot;
+      }
+    },
+    {
+      &quot;code&quot;: &quot;V92ANT&quot;,
+      &quot;first_name&quot;: &quot;2.58.P1&quot;,
+      &quot;user_name&quot;: &quot;2.58.P1@yopmail.com&quot;,
+      &quot;email&quot;: &quot;2.58.P1@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 1,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;2:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;RBBBFZ&quot;,
+      &quot;first_name&quot;: &quot;USER 258J&quot;,
+      &quot;last_name&quot;: &quot;789&quot;,
+      &quot;user_name&quot;: &quot;user_2.58j@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user_2.58j@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;456&quot;,
+      &quot;telephone_no&quot;: &quot;123&quot;,
+      &quot;avatar_code&quot;: &quot;U7:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;test-role&quot;,
+          &quot;name&quot;: &quot;Test Role&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Architect_1&quot;,
+        &quot;code&quot;: &quot;architect&quot;
+      },
+      &quot;actual_cost&quot;: &quot;42.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;KSV0GR&quot;,
+      &quot;first_name&quot;: &quot;user-1a&quot;,
+      &quot;user_name&quot;: &quot;user-1a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-1a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Res Type-1&quot;,
+        &quot;code&quot;: &quot;res-type-1&quot;
+      },
+      &quot;actual_cost&quot;: &quot;49.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;QHN14Y&quot;,
+      &quot;first_name&quot;: &quot;user-2a-1a&quot;,
+      &quot;user_name&quot;: &quot;user-2a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-2a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 1,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Res Type-2&quot;,
+        &quot;code&quot;: &quot;res-type-2&quot;
+      },
+      &quot;actual_cost&quot;: &quot;59.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;MDY7HT&quot;,
+      &quot;first_name&quot;: &quot;Ajo Joseph&quot;,
+      &quot;user_name&quot;: &quot;ajo@lovethatdesign.com&quot;,
+      &quot;email&quot;: &quot;ajo@lovethatdesign.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;A:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Res Type-3&quot;,
+        &quot;code&quot;: &quot;res-type-3&quot;
+      },
+      &quot;actual_cost&quot;: &quot;2.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;WIRRJJ&quot;,
+      &quot;first_name&quot;: &quot;user-3a&quot;,
+      &quot;user_name&quot;: &quot;user-3a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-3a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;actual_cost&quot;: &quot;50.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;NGWY5G&quot;,
+      &quot;first_name&quot;: &quot;user-7a&quot;,
+      &quot;user_name&quot;: &quot;user-7a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-7a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;7658&quot;,
+      &quot;telephone_no&quot;: &quot;675&quot;,
+      &quot;profile_image&quot;: &quot;5198a6fd2c01e24fe6280be2e05407163ca4.png&quot;,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;CVA04J&quot;,
+      &quot;first_name&quot;: &quot;user-8a&quot;,
+      &quot;user_name&quot;: &quot;user-8a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-8a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;Senior director&quot;,
+        &quot;code&quot;: &quot;senior-director&quot;
+      },
+      &quot;actual_cost&quot;: &quot;26.00&quot;
+    },
+    {
+      &quot;code&quot;: &quot;H71L63&quot;,
+      &quot;first_name&quot;: &quot;user-9a&quot;,
+      &quot;user_name&quot;: &quot;user-9a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-9a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;profile_image&quot;: &quot;d4c453efaf6c3a4c78a8efeaaca168283054.png&quot;,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;Y9C6GF&quot;,
+      &quot;first_name&quot;: &quot;user-12a&quot;,
+      &quot;user_name&quot;: &quot;user-12a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-12a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;JDU1SR&quot;,
+      &quot;first_name&quot;: &quot;user-13a&quot;,
+      &quot;user_name&quot;: &quot;user-13a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-13a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 1,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;BMRYP5&quot;,
+      &quot;first_name&quot;: &quot;User test&quot;,
+      &quot;user_name&quot;: &quot;user-studio-test@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-studio-test@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;L2JICS&quot;,
+      &quot;first_name&quot;: &quot;user-14a .Studio&quot;,
+      &quot;user_name&quot;: &quot;user-14a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-14a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 1,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;EUV2OR&quot;,
+      &quot;first_name&quot;: &quot;user-17a&quot;,
+      &quot;user_name&quot;: &quot;user-17a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-17a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;profile_image&quot;: &quot;455deb3b3f44d3437a3949b318b35ec32c12.jpg&quot;,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;T1VGOZ&quot;,
+      &quot;first_name&quot;: &quot;user-18a&quot;,
+      &quot;user_name&quot;: &quot;user-18a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-18a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;BAW9GM&quot;,
+      &quot;first_name&quot;: &quot;user-19a&quot;,
+      &quot;user_name&quot;: &quot;user-19a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-19a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;KCEYQE&quot;,
+      &quot;first_name&quot;: &quot;user-20a&quot;,
+      &quot;user_name&quot;: &quot;user-20a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-20a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 1,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;HYP68S&quot;,
+      &quot;first_name&quot;: &quot;user-21&quot;,
+      &quot;user_name&quot;: &quot;user-21@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-21@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;P6YDFL&quot;,
+      &quot;first_name&quot;: &quot;user-22a&quot;,
+      &quot;user_name&quot;: &quot;user-22a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-22a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;just-for-activity&quot;,
+          &quot;name&quot;: &quot;Just for Activity&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;07b8b8b20bc0e046550839a0a757aaa7837d&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;YVZ5TP&quot;,
+      &quot;first_name&quot;: &quot;user-23a&quot;,
+      &quot;user_name&quot;: &quot;user-23a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-23a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;N52GIJ&quot;,
+      &quot;first_name&quot;: &quot;user-24a@yopmail.com&quot;,
+      &quot;user_name&quot;: &quot;user-24a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-24a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;20200422094244554role1&quot;,
+          &quot;name&quot;: &quot;20200422094244554Role1&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;0e62df2b475d044e52481d9416d8768f18c2&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;KHVPO9&quot;,
+      &quot;first_name&quot;: &quot;User-26a&quot;,
+      &quot;user_name&quot;: &quot;user-26a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-26a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;designer&quot;,
+          &quot;name&quot;: &quot;Designer&quot;,
+          &quot;description&quot;: &quot;Designer&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9db33-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ],
+      &quot;resource_type&quot;: {
+        &quot;name&quot;: &quot;1ST Resource's Test&quot;,
+        &quot;code&quot;: &quot;1111-resource&quot;
+      }
+    },
+    {
+      &quot;code&quot;: &quot;F9793N&quot;,
+      &quot;first_name&quot;: &quot;user-27ab&quot;,
+      &quot;last_name&quot;: &quot;m&quot;,
+      &quot;user_name&quot;: &quot;user-27a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-27a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;0524242211&quot;,
+      &quot;telephone_no&quot;: &quot;0524242211&quot;,
+      &quot;avatar_code&quot;: &quot;UM:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;WATG7L&quot;,
+      &quot;first_name&quot;: &quot;user-28a&quot;,
+      &quot;last_name&quot;: &quot;hi&quot;,
+      &quot;user_name&quot;: &quot;user-28a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-28a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 1,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;0524242211&quot;,
+      &quot;telephone_no&quot;: &quot;0524242211&quot;,
+      &quot;avatar_code&quot;: &quot;UH:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;K2P7BZ&quot;,
+      &quot;first_name&quot;: &quot;user-29a&quot;,
+      &quot;user_name&quot;: &quot;user-29a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-29a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;contact_no&quot;: &quot;0524242211&quot;,
+      &quot;telephone_no&quot;: &quot;0524242211&quot;,
+      &quot;profile_image&quot;: &quot;d103daee147e31455b181e11d30714df237d.png&quot;,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;QO9RJP&quot;,
+      &quot;first_name&quot;: &quot;user-31a&quot;,
+      &quot;user_name&quot;: &quot;user-31a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-31a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;WFYGKV&quot;,
+      &quot;first_name&quot;: &quot;user-32a&quot;,
+      &quot;user_name&quot;: &quot;user-32a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-32a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;BBQP68&quot;,
+      &quot;first_name&quot;: &quot;user-33a&quot;,
+      &quot;user_name&quot;: &quot;user-33a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-33a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;design-director&quot;,
+          &quot;name&quot;: &quot;Design Director&quot;,
+          &quot;description&quot;: &quot;Design Director&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9da2f-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;designer&quot;,
+          &quot;name&quot;: &quot;Designer&quot;,
+          &quot;description&quot;: &quot;Designer&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9db33-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;UF7E3H&quot;,
+      &quot;first_name&quot;: &quot;user-34a&quot;,
+      &quot;user_name&quot;: &quot;user-34a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-34a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;20200422114041965role1&quot;,
+          &quot;name&quot;: &quot;20200422114041965Role1&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;59d5f9fce5af1e4711e8dd8e5e7cc6650b25&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;XTNDJN&quot;,
+      &quot;first_name&quot;: &quot;user-35a@yopmail.com&quot;,
+      &quot;user_name&quot;: &quot;user-35a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-35a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;ZXQ0E4&quot;,
+      &quot;first_name&quot;: &quot;user-36a&quot;,
+      &quot;user_name&quot;: &quot;user-36a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-36a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;YFS52R&quot;,
+      &quot;first_name&quot;: &quot;user-37a&quot;,
+      &quot;user_name&quot;: &quot;user-37a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-37a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        },
+        {
+          &quot;code&quot;: &quot;20200422094244554role1&quot;,
+          &quot;name&quot;: &quot;20200422094244554Role1&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;0e62df2b475d044e52481d9416d8768f18c2&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;WPPE4F&quot;,
+      &quot;first_name&quot;: &quot;Dummy&quot;,
+      &quot;user_name&quot;: &quot;piyilef637@alltekia.com&quot;,
+      &quot;email&quot;: &quot;piyilef637@alltekia.com&quot;,
+      &quot;is_disabled&quot;: 1,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;D:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;Y6AD6K&quot;,
+      &quot;first_name&quot;: &quot;user-38a&quot;,
+      &quot;user_name&quot;: &quot;user-38a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-38a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;N70P1U&quot;,
+      &quot;first_name&quot;: &quot;user-39a&quot;,
+      &quot;user_name&quot;: &quot;user-39a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-39a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;V4FQ4B&quot;,
+      &quot;first_name&quot;: &quot;user-40a&quot;,
+      &quot;user_name&quot;: &quot;user-40a@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-40a@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;admin&quot;,
+          &quot;name&quot;: &quot;Admin&quot;,
+          &quot;description&quot;: &quot;Admin&quot;,
+          &quot;module_id&quot;: 5,
+          &quot;batch_id&quot;: &quot;d3d9d784-19d2-11ea-b552-024d8e09c238&quot;
+        }
+      ]
+    },
+    {
+      &quot;code&quot;: &quot;J86WUO&quot;,
+      &quot;first_name&quot;: &quot;user-41a&quot;,
+      &quot;user_name&quot;: &quot;user-41@yopmail.com&quot;,
+      &quot;email&quot;: &quot;user-41@yopmail.com&quot;,
+      &quot;is_disabled&quot;: 0,
+      &quot;is_blocked&quot;: 0,
+      &quot;is_registered&quot;: 1,
+      &quot;is_guest&quot;: 0,
+      &quot;avatar_code&quot;: &quot;U:1&quot;,
+      &quot;security&quot;: [
+        {
+          &quot;code&quot;: &quot;test-role&quot;,
+          &quot;name&quot;: &quot;Test Role&quot;,
+          &quot;module_id&quot;: 0,
+          &quot;batch_id&quot;: &quot;1c68855cbf811b462db8a16b3bd73d54d2bd&quot;
+        }
+      ]
+    }
+  ]
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

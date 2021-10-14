@@ -1,0 +1,39 @@
+{
+    "data": {
+        "name": "Lenovo Company 55",
+        "code": "#string",
+        "address": "address",
+        "state": "26375644",
+        "zip_code": "976666666",
+        "city_name": "zambia",
+        "website": "www.lenovo.com",
+        "fax": "989786565",
+        "email": "lenovo@email.com",
+        "tel_no": "87665453543",
+        "industry_type": [
+            {
+                "name": "Architects",
+                "code": "architects"
+            }
+        ],
+        "country": {
+            "name": "Angola",
+            "code": "AO"
+        },
+        "tags": [
+            "company",
+            "kvadrat"
+        ],
+        "responsible": {
+            "code": "IIG7F5",
+            "first_name": "Likhitha",
+            "last_name": "AC",
+            "email": "Likhitha@28lightbulbs.com",
+            "is_disabled": 0,
+            "contact_no": "989898",
+            "telephone_no": "955354356",
+            "profile_image": "5cd28e2df01d5f4dfcfbb45f16be6280a210.jpg",
+            "avatar_code": "LA:1"
+        }
+    }
+}

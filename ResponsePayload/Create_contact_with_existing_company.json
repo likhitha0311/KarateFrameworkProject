@@ -1,0 +1,47 @@
+{
+    "data": {
+        "name": "Preethi",
+        "code": "#string",
+        "lead_source": "facebook",
+        "created_on": "#string",
+        "last_tran_date": "#string",
+        "designation": "developer",
+        "avatar_code": "#string",
+        "mobile_no1": "000088888",
+        "tel_no1": "8796778888",
+        "email": "preethis@28lightbulbs.com",
+        "linked_in_url": "https://test-designer.lovethat.design/address-book/contacts",
+        "company": {
+            "name": "28lightbulbs",
+            "code": "28lightbulbs",
+            "city_name": "#string",
+            "country": {
+                "name": "#string",
+                "code": "#string"
+            },
+            "industry_type": [
+                {
+                    "name": "#string",
+                    "code": "#string"
+                }
+            ],
+            "responsible": {
+                "code": "#string",
+                "first_name": "#string",
+                "last_name": "#string",
+                "email": "#string",
+                "is_disabled": 0,
+                "contact_no": "#string",
+                "telephone_no": "#string",
+                "profile_image": "#string",
+                "avatar_code": "#string"
+            },
+            "company_type": {
+                "name": "#string",
+                "code": "#string"
+            }
+        },
+        "last_updated_on": "#string",
+        "tags":'#[] #string'
+    }
+}

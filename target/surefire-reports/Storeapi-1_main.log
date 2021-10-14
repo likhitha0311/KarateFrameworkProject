@@ -1,0 +1,31 @@
+13:26:45.585 request:
+1 > POST https://images.api.spec.lovethat.design/test-designer/store
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzQyMDM2MDcsImV4cCI6MTYzNDM3NjQwNywibmJmIjoxNjM0MjAzNjA3LCJqdGkiOiJ1cG1qVW9mbTFDTmtmN0F4Iiwic3ViIjoxNCwicHJ2IjoiZjgzOGI5NTA5YWFmOTRjMzM4NmY2NzlmODkyOWNkYzc2N2M3MGYyZiIsInVzZXJfY2FjaGVfa2V5IjoiZXlKcGRpSTZJbE5jTDBKY0x6SnJkak5MYTNsVGRVcFVZWFV3VURBclFUMDlJaXdpZG1Gc2RXVWlPaUpsYzIweFNub3JZbmQ2YnpOY0wydHBTVGxtYzA0eVJWaFFZMHAyYjA1NVpUQndSVzFrYzF3dmNqUTVhbHd2Y2xOb09EazBLMnR1YjBVeVFUUnhWSHB1WWpjeUlpd2liV0ZqSWpvaU5UUm1OV1prWXpVME1HWmhaVEppWWpoa05EZ3daRFF3TnpCaE1XRTFNVE5oT0RCa01EQTVNR1psWm1NME1EZGhZbUprTlRRek16ZG1aR1l4TUdJM01TSjkiLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SWt0SlRGWjBXVWxaZGpjeFZFNWNMMEppWWpKb1lYRm5QVDBpTENKMllXeDFaU0k2SWxjNWJUQTFPRFpZVDJsR1MxQnBOMUpLY2pSR1ZXNXhZMXd2VnpobFQyOWpNR3QwUjBoMFJYTTJRMGt3UFNJc0ltMWhZeUk2SWpBM01HVTBNRGd3Wm1VNE9XVTFObVppTnpVNU16ZzFOV0ppT1dOak9HUTBZVEkzT0dNNVlqTXdNRGN5WXpZeVpXSmxZbVk0WWprM05ETXdZemswTURVaWZRPT0ifQ.twgYeLRSKtUhezW5AAT3qFqUPb3xUlmLYjXqrQb_KKs
+1 > Connection: Keep-Alive
+1 > Content-Length: 130
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: images.api.spec.lovethat.design
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{"id":"c544aff8-f1a7-4409-a5a1-21867658f786.jpg","name":"K1-F-XafzV.jpg","size":3456,"type":"image/jpeg","resource_type":"images"}
+
+13:26:46.805 response time in milliseconds: 1217.22
+1 < 200
+1 < Cache-Control: no-cache, private
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 14 Oct 2021 09:26:48 GMT
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < Set-Cookie: specstorageapi_session=eyJpdiI6Ik8ydTh3aThSSGk5WDJDN2tYRU4zdXc9PSIsInZhbHVlIjoiS28rTkdvbzNYODM4TWJJK0xaMWdTeEFjanRQUFMzV0MwMjY3SVZ5YXkrVXRQNm10Mm1WakMzaWZBUkNTQkZwZCIsIm1hYyI6IjAyNmUyNGVmODE2MTE2NTU2MDk1YmJlOTNmZTFiMjU5NzhhMDRjNmE2ZDZlZmM0NzJmNmFmYTgyM2JlNjM2ZWUifQ%3D%3D; expires=Fri, 22-Oct-2021 17:26:48 GMT; Max-Age=720000; path=/; httponly
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+{"reference_id":"c544aff8-f1a7-4409-a5a1-21867658f786.jpg","upload_token":"HrznTruYhWuQFbeK6g52c544aff8-f1a7-4409-a5a1-21867658f786.jpg","name":"K1-F-XafzV.jpg","size":3456}
+
+13:26:46.808 [print] {
+  "reference_id": "c544aff8-f1a7-4409-a5a1-21867658f786.jpg",
+  "upload_token": "HrznTruYhWuQFbeK6g52c544aff8-f1a7-4409-a5a1-21867658f786.jpg",
+  "name": "K1-F-XafzV.jpg",
+  "size": 3456
+}
+
+13:26:46.821 [print] HrznTruYhWuQFbeK6g52c544aff8-f1a7-4409-a5a1-21867658f786.jpg

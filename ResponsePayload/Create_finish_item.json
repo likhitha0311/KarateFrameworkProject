@@ -1,0 +1,35 @@
+{
+    "data": {
+        "list": [
+            {
+                "name": "#string",
+                "revision_no": 0,
+                "product_record_code": "#string",
+                "code": "#string",
+                "retail_price": "123.000",
+                "cost_price": "123.000",
+                "sales_price": "135.300",
+                "total_price": "1353.000",
+                "margin_percentage": "10.000",
+                "product_type_name": "Glass & Mirror Finishes",
+                "ranking_sort_code": "#string",
+                "image_ref_id": "#string",
+                "brand_name": "Ikea",
+                "product_name": "I90-123-aB",
+                "package_record_status": 1,
+                "map": [
+                    {
+                        "code": "reception",
+                        "units": 10,
+                        "remarks": null,
+                        "name": "Reception",
+                        "map_type": {
+                            "code": "room",
+                            "name": "Room"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

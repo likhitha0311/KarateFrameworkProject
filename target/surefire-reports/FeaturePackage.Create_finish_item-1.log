@@ -1,0 +1,67 @@
+13:26:43.109 Environment variable is null 
+13:26:43.112 karate.env = null 
+13:26:43.114 config.baseUrl = https://designer.api.spec.lovethat.design/api/designer/v1.0/ 
+13:26:43.116 config.token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo 
+13:26:48.852 request:
+1 > POST https://designer.api.spec.lovethat.design/api/designer/v1.0/projects/packages/karate-api-testing-package/package-items?force=false&view=sections
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzQyMDM2MDcsImV4cCI6MTYzNDM3NjQwNywibmJmIjoxNjM0MjAzNjA3LCJqdGkiOiJ1cG1qVW9mbTFDTmtmN0F4Iiwic3ViIjoxNCwicHJ2IjoiZjgzOGI5NTA5YWFmOTRjMzM4NmY2NzlmODkyOWNkYzc2N2M3MGYyZiIsInVzZXJfY2FjaGVfa2V5IjoiZXlKcGRpSTZJbE5jTDBKY0x6SnJkak5MYTNsVGRVcFVZWFV3VURBclFUMDlJaXdpZG1Gc2RXVWlPaUpsYzIweFNub3JZbmQ2YnpOY0wydHBTVGxtYzA0eVJWaFFZMHAyYjA1NVpUQndSVzFrYzF3dmNqUTVhbHd2Y2xOb09EazBLMnR1YjBVeVFUUnhWSHB1WWpjeUlpd2liV0ZqSWpvaU5UUm1OV1prWXpVME1HWmhaVEppWWpoa05EZ3daRFF3TnpCaE1XRTFNVE5oT0RCa01EQTVNR1psWm1NME1EZGhZbUprTlRRek16ZG1aR1l4TUdJM01TSjkiLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SWt0SlRGWjBXVWxaZGpjeFZFNWNMMEppWWpKb1lYRm5QVDBpTENKMllXeDFaU0k2SWxjNWJUQTFPRFpZVDJsR1MxQnBOMUpLY2pSR1ZXNXhZMXd2VnpobFQyOWpNR3QwUjBoMFJYTTJRMGt3UFNJc0ltMWhZeUk2SWpBM01HVTBNRGd3Wm1VNE9XVTFObVppTnpVNU16ZzFOV0ppT1dOak9HUTBZVEkzT0dNNVlqTXdNRGN5WXpZeVpXSmxZbVk0WWprM05ETXdZemswTURVaWZRPT0ifQ.twgYeLRSKtUhezW5AAT3qFqUPb3xUlmLYjXqrQb_KKs
+1 > Connection: Keep-Alive
+1 > Content-Length: 1890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: specstorageapi_session=eyJpdiI6Ik8ydTh3aThSSGk5WDJDN2tYRU4zdXc9PSIsInZhbHVlIjoiS28rTkdvbzNYODM4TWJJK0xaMWdTeEFjanRQUFMzV0MwMjY3SVZ5YXkrVXRQNm10Mm1WakMzaWZBUkNTQkZwZCIsIm1hYyI6IjAyNmUyNGVmODE2MTE2NTU2MDk1YmJlOTNmZTFiMjU5NzhhMDRjNmE2ZDZlZmM0NzJmNmFmYTgyM2JlNjM2ZWUifQ%3D%3D
+1 > Host: designer.api.spec.lovethat.design
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{"package_item":{"batch_id":"00bcd83326e8824cd92817920419c7a312d2","package_code":"karate-api-testing-package","revision_no":1,"name":"K1-F-XafzV-Name","product_record_code":"K1-F-XafzV-Code","default_code":null,"code":null,"notes":"<p>Finish Item notes</p>","special_instructions":null,"package_section_name":null,"package_section_code":null,"common_attributes":[{"name":"color","type":"Text","rank":1,"values":["red"]},{"name":"make","type":"Text","rank":2,"values":["wood","plastic","leather"]}],"finish_notes":null,"classification":"","green_building_rating":"","approval_requirements":["strike-off","finish-sample"],"quantity_unit":"PCS","total_price":"1353","discount_price":"0","vendor":[],"package_record_map":[{"code":null,"floor":"7th floor","room":"Reception","parent":null,"no_of_units":10}],"product_options":[],"tags":[],"retail_price":"123","cost_price":"123","margin_percentage":"10","sales_price":"135.30"},"product_options":[{"batch_id":"00bcd83326e8824cd92817920419c7a312d2","code":null,"sku":null,"name":"I90-123-aB","type":"kristinazanic-glass-mirror-finishes","brand":"Ikea","manufacturer":null,"country_of_origin":null,"product_family":null,"model_no":"","description":"","featured_image":{"type":"Featured","file":{"name":"K1-F-XafzV.jpg","src":"","percentage":0},"ref_id":"74fdd7c898ea394f3498b15926b2b0fc4c1c.jpg","tags":[],"checked":true},"keyword":[],"style":[],"length":"undefined mm","height":"undefined mm","width":"undefined mm","weight":"undefined lbs","diameter":"undefined mm","quantity_unit":"PCS","unit_price":0,"currency_code":"AED","amount":0,"delivery_duration_type_code":"day","delivery_duration":"20","images":[{"type":"Featured","ref_id":"c544aff8-f1a7-4409-a5a1-21867658f786.jpg"},{"type":"Studio","ref_id":"c544aff8-f1a7-4409-a5a1-21867658f786.jpg"}],"documents":[],"attributes":[],"part_collection":[],"accessory_collection":[],"finishes":[]}]}
+
+13:26:50.332 response time in milliseconds: 1478.46
+1 < 200
+1 < Cache-Control: no-cache, private
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Thu, 14 Oct 2021 09:26:52 GMT
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+{"data":{"list":[{"name":"K1-F-XafzV-Name","revision_no":0,"product_record_code":"K1-F-XafzV-Code","code":"5bf70dfe-a18f-404f-9c86-aa6050bffe49","retail_price":"123.000","cost_price":"123.000","sales_price":"135.300","total_price":"1353.000","margin_percentage":"10.000","product_type_name":"Glass & Mirror Finishes","ranking_sort_code":"K0000000001-F-XafzV-Code","image_ref_id":"c544aff8-f1a7-4409-a5a1-21867658f786.jpg","brand_name":"Ikea","product_name":"I90-123-aB","package_record_status":1,"map":[{"code":"reception","units":10,"remarks":null,"name":"Reception","map_type":{"code":"room","name":"Room"}}]}]}}
+
+13:26:50.334 [print] {
+  "data": {
+    "list": [
+      {
+        "name": "K1-F-XafzV-Name",
+        "revision_no": 0,
+        "product_record_code": "K1-F-XafzV-Code",
+        "code": "5bf70dfe-a18f-404f-9c86-aa6050bffe49",
+        "retail_price": "123.000",
+        "cost_price": "123.000",
+        "sales_price": "135.300",
+        "total_price": "1353.000",
+        "margin_percentage": "10.000",
+        "product_type_name": "Glass & Mirror Finishes",
+        "ranking_sort_code": "K0000000001-F-XafzV-Code",
+        "image_ref_id": "c544aff8-f1a7-4409-a5a1-21867658f786.jpg",
+        "brand_name": "Ikea",
+        "product_name": "I90-123-aB",
+        "package_record_status": 1,
+        "map": [
+          {
+            "code": "reception",
+            "units": 10,
+            "remarks": null,
+            "name": "Reception",
+            "map_type": {
+              "code": "room",
+              "name": "Room"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+
+13:26:50.366 [print] 5bf70dfe-a18f-404f-9c86-aa6050bffe49
+c
+13:23:47.587 assertion failed: path: $.data.list[0], actual: {name=K1-F-7sRwIName, revision_no=0, product_record_code=K1-F-7sRwICode, code=e381be88-f275-43ed-884f-02bd0b10078c, retail_price=123.000, cost_price=123.000, sales_price=135.300, total_price=1353.000, margin_percentage=10.000, product_type_name=Glass & Mirror Finishes, ranking_sort_code=K0000000001-F-0000000007sRwICode, image_ref_id=5e555c20-b7cf-4a50-bed8-cb1e30c23e91.jpg, brand_name=Ikea, product_name=I90-123-aB, package_record_status=1, map=[{"code":"reception","units":10,"remarks":null,"name":"Reception","map_type":{"code":"room","name":"Room"}}]}, expected: {name=#string, revision_no=0, product_record_code=#string, code=#string, retail_price=123.000, cost_price=123.000, sales_price=135.300, total_price=1353.000, margin_percentage=10.000, product_type_name=Glass & Mirror Finishes, ranking_sort_code=K0000000001-F0000000001-Code0000000001, image_ref_id=#string, brand_name=Ikea, product_name=I90-123-aB, package_record_status=1, map=[{"code":"reception","units":10,"remarks":null,"name":"Reception","map_type":{"code":"room","name":"Room"}}]}, reason: [path: $.data.list[0].ranking_sort_code, actual: 'K0000000001-F-0000000007sRwICode', expected: 'K0000000001-F0000000001-Code0000000001', reason: not equal]
+on: not equal]

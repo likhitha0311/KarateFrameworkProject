@@ -1,0 +1,59 @@
+12:44:05.752 Environment variable is null 
+12:44:05.755 karate.env = null 
+12:44:05.757 config.baseUrl = https://designer.api.spec.lovethat.design/api/designer/v1.0/ 
+12:44:05.759 config.token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzIwNDE3NTAsImV4cCI6MTYzMjIxNDU1MCwibmJmIjoxNjMyMDQxNzUwLCJqdGkiOiJzY293NFMwYVA4NDFiZEtVIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SWtkV1JrNU9URU14Y1ZjMlNqbEJiVEJHVFRjNWVIYzlQU0lzSW5aaGJIVmxJam9pVHpkVFhDOWpUMXB6VTJnMVpYUmpPR2xtWlVsSVhDOXpiMkZSVms0ME9VWjRjVVJzZW1ad2VGUXhiemsxVEVNMVRVTktjM05NV2xOeU5FOXVRMFJvY210Y0x5SXNJbTFoWXlJNklqZ3hZelZtTkRjNE9UTmlZamN3TkRFM09UY3lNRGhpT0RobE9HSmtPVFU0T1dFME5qTXdNekpoT0dRMU5XWXdORGMwWVRWaVkySmxaVGhpWm1GbE5EY2lmUT09IiwiY29tcGFueV9hY2NvdW50X2NvZGUiOiJleUpwZGlJNklrOU1ZMkoxVUV0NU5sWTVRWHBvZVVKbFUyMVNWMmM5UFNJc0luWmhiSFZsSWpvaU5IQm5WMjF2VDJGbVR6SlpXbVJwWmtWeFV6aEZja2Q2U1ZCUldVSmxXalpoY1dNNVpucFhPSEJsVlQwaUxDSnRZV01pT2lKalltWmxNVEEyTWpNek9HRmtPR1k1TjJZNU56bGhZV0l5TXpBd01tSTVPREZpTXpoa1l6RXhOVGsyTVRSalpUSXdOamt5TldFeE1qQTBNV1JrTnpsakluMD0ifQ.L1WL2SQ5bodKMcR1suUFF1E0H9jL_B-foGKufZNtNGo 
+12:44:07.810 [print] File name is K1-ubJi3.jpg
+12:44:10.159 [print]
+12:44:10.168 request:
+1 > POST https://designer.api.spec.lovethat.design/api/designer/v1.0/projects/packages/karate-api-testing-package/package-items?force=false&view=sections
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzQxMTQ2NDgsImV4cCI6MTYzNDI4NzQ0OCwibmJmIjoxNjM0MTE0NjQ4LCJqdGkiOiJNMUh5T0xWNEowUGlLekhwIiwic3ViIjoxNCwicHJ2IjoiZjgzOGI5NTA5YWFmOTRjMzM4NmY2NzlmODkyOWNkYzc2N2M3MGYyZiIsInVzZXJfY2FjaGVfa2V5IjoiZXlKcGRpSTZJalp3WjNGcVowMUZhM1JsV1VSVVlUbG1aMkpXUlhjOVBTSXNJblpoYkhWbElqb2lTMlJEWTNsSFoweEJNVWRNTlVwaGJFWnpkWEZ2ZGxGNE5GZHFTMXAzT1dvM1owODVRbXhoWVhOMVVrTnpkak5SY0U1dWNVeGFlVzAwUkhGWE1ucEhSeUlzSW0xaFl5STZJbVJoWm1WallqRTVPRGt5TXprd1pHVXpPV1ZrTXpZMk9EQXpOV1V5Wm1Fek5qaGhPVGs1TXpjMk5qWTRPVGRtTUdFeVpXWTFOR1U0WVRBeE1tUTNaakVpZlE9PSIsImNvbXBhbnlfYWNjb3VudF9jb2RlIjoiZXlKcGRpSTZJbFpoZVdGVGRrZHhlRnBTZWtaa05raGFUV2wyZGtFOVBTSXNJblpoYkhWbElqb2lOMXBoWW5JMmVYQnRUakIwUVRaQ2VXZDRhMDV3Y1VSaGR6WnVhVzgyYzNsM1hDOVRZakZqVTFVd1QwVTlJaXdpYldGaklqb2laVEV5WkdZeE9EVTBOR0k1WlRneVptWmhZMk0xWVRWak56STJOalEzTVdNNVltRXdOemxpTm1RM1ltRmtNRGRpTVdWbFl6Z3lZelF4Wmpka04ySTNOaUo5In0.3TYdMwaVpIZD3SuyghvbsDSVUeGF6DjNS9NczbHWNh4
+1 > Connection: Keep-Alive
+1 > Content-Length: 1597
+1 > Content-Type: application/json; charset=UTF-8
+1 > Cookie: specstorageapi_session=eyJpdiI6ImN5cUV3SEVXZ2tUcnBHNThDQ0ZTM2c9PSIsInZhbHVlIjoiRlRDY1RxODduZWsraVgyOFwvcFJIMHlaaGxLSXhNUnhtUVgyWmcrbnZ6TmcyN3NcLzJTWTFWNmo0V21MN0hXdU9UIiwibWFjIjoiMDJhYTkzMjE4ZGZhODM3MzYxNWRiYzJmZDIwZGQzYWM4NGEyYzExMjNiMjQ3ZWI5ZDZkNmMzYTMwZWMwMTc0OCJ9
+1 > Host: designer.api.spec.lovethat.design
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/14.0.2)
+{"package_item":{"batch_id":"3f8a8adad31ecd498cd9cfdde10f6dbb8246","package_code":"karate-api-testing-package","revision_no":1,"name":"ubJi3name","product_record_code":"ubJi3code","default_code":null,"code":null,"notes":null,"special_instructions":null,"package_section_name":null,"package_section_code":null,"common_attributes":[],"finish_notes":null,"classification":"","green_building_rating":"","approval_requirements":[],"quantity_unit":"PCS","total_price":"0","discount_price":"0","vendor":[],"package_record_map":[{"code":null,"no_of_units":0}],"product_options":[],"tags":[],"retail_price":null,"cost_price":null,"margin_percentage":null,"sales_price":null},"product_options":[{"batch_id":"3f8a8adad31ecd498cd9cfdde10f6dbb8246","code":null,"sku":null,"name":null,"type":null,"brand":"","manufacturer":null,"country_of_origin":null,"product_family":null,"model_no":"","description":"","featured_image":{"type":"Featured","file":{"name":"Company-Pallavi-Desktop.png","src":"","percentage":0},"ref_id":"bd2a929a-676a-4546-a223-fcadebbb4665.jpg","tags":[],"checked":true,"name":"K1-ubJi3.jpg"},"keyword":[],"style":[],"length":"undefined mm","height":"undefined mm","width":"undefined mm","weight":"undefined lbs","diameter":"undefined mm","quantity_unit":"PCS","unit_price":0,"currency_code":"AED","amount":0,"delivery_duration_type_code":"day","images":[{"type":"Featured","ref_id":"bd2a929a-676a-4546-a223-fcadebbb4665.jpg"},{"type":"Studio","ref_id":"bd2a929a-676a-4546-a223-fcadebbb4665.jpg"}],"documents":[],"attributes":[],"part_collection":[],"accessory_collection":[],"finishes":[]}]}
+
+12:44:11.184 response time in milliseconds: 1013.29
+1 < 200
+1 < Cache-Control: no-cache, private
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 13 Oct 2021 08:44:12 GMT
+1 < Server: nginx/1.14.0 (Ubuntu)
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+{"data":{"list":[{"name":"ubJi3name","revision_no":0,"product_record_code":"ubJi3code","code":"80491b3f-687d-422e-a347-f9431d7d9271","total_price":"0.000","ranking_sort_code":"ubJi0000000003code","image_ref_id":"bd2a929a-676a-4546-a223-fcadebbb4665.jpg","product_name":"","package_record_status":1,"map":[{"code":null,"units":0,"remarks":null,"name":null}]}]}}
+
+12:44:11.187 [print] {
+  "data": {
+    "list": [
+      {
+        "name": "ubJi3name",
+        "revision_no": 0,
+        "product_record_code": "ubJi3code",
+        "code": "80491b3f-687d-422e-a347-f9431d7d9271",
+        "total_price": "0.000",
+        "ranking_sort_code": "ubJi0000000003code",
+        "image_ref_id": "bd2a929a-676a-4546-a223-fcadebbb4665.jpg",
+        "product_name": "",
+        "package_record_status": 1,
+        "map": [
+          {
+            "code": null,
+            "units": 0,
+            "remarks": null,
+            "name": null
+          }
+        ]
+      }
+    ]
+  }
+}
+
+12:44:11.224 [print] ubJi3name
+12:44:11.233 [print] ubJi3code
+e
+t] Mrs6tcode

@@ -1,0 +1,20 @@
+
+@tag
+Feature: Get all addressbook contacts
+ 
+  Background:
+  * header Authorization = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXV0aC5hcGkuc3BlYy5sb3ZldGhhdC5kZXNpZ25cL2FwaVwvbG9naW4iLCJpYXQiOjE2MzA0MDAxNzgsImV4cCI6MTYzMDU3Mjk3OCwibmJmIjoxNjMwNDAwMTc4LCJqdGkiOiI2dVR5UURPY3pNNGxCeEdkIiwic3ViIjoxMDcsInBydiI6ImY4MzhiOTUwOWFhZjk0YzMzODZmNjc5Zjg5MjljZGM3NjdjNzBmMmYiLCJ1c2VyX2NhY2hlX2tleSI6ImV5SnBkaUk2SW05U05qa3lOMDVQTlRCNFZYWXlSMnRtZGtRclpFRTlQU0lzSW5aaGJIVmxJam9pVUVkSFdWWjFSWEJ4WWtsa2VtaFVRMVJYUmtGcGVHYzFTa0V5WWpRMVJVWktWa1JyY3pGTVVFdEhLMDFhTkc0MGJsQkdhRXBSTTJwVVIwMXFaVEZGTmlJc0ltMWhZeUk2SW1WbE1tUm1aamxrTWpjd05tVXpaR1k1TURsaVltVTVNRGt3T0RnNU56bGhNR00yWWpVMk1qUTJOekUyWkdZNU1URmhaVGRpTkdZeFpqWTFaR1F3TXpNaWZRPT0iLCJjb21wYW55X2FjY291bnRfY29kZSI6ImV5SnBkaUk2SW1oQllYUm5kWGRjTDJOblZuWndXVWxFYVd0SmFWcEJQVDBpTENKMllXeDFaU0k2SWxwVmRWUnFSSHBtWEM5VVUwZHNlVTFVVDJjNFpqaEhRVEIyVlRFNGRYbGtXamxYVWpoQlpGQldVV1ozUFNJc0ltMWhZeUk2SWpNNU5XUm1NR05tWVdFME5EZGhZelZoWTJaaE5EUm1aRGMwWTJVMk1EaGtaV1l6TW1ReE9XRmlORFZqTm1WbU5EYzFaVEkxWkdKaVlUVmpOekpqWlRNaWZRPT0ifQ.3aeqwZtm5gq1WeGKUK7zxHAR3IjPq9y2Fb3_ZKM-B1Q' 
+ 
+
+
+  @tag1
+  Scenario: Get all addressbook contacts
+    Given url 'https://designer.api.spec.lovethat.design/api/designer/v1.0/contacts/filter?search=&page_no=1&page_size=10&sort_by=&contact=&company=&interaction_date=&industryType_code=&country_code=&owner_code=&tag=&isFilterEnabled=false'
+    When method GET
+    Then status 200
+    And print response
+    And match response.data.list_info.count == 519
+
+
+
+ 
